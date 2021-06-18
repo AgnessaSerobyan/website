@@ -1,20 +1,95 @@
+<!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript">
-var changePage = function() {
-    var iframe = document.getElementById("myiframe");  // One of the many ways to select your iframe
-    var select = document.getElementById("pageselected");
-    var url = select.options[select.selectedIndex].value;
-    iframe.src = url;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.btn {
+  position: relative;
+  color: white;
+  padding: 12px 38px;
+  width: 190px;
+  height: 120;
+  line-height: 35px;
+  top: 50px;
+  text-decoration: none;
+  left: 920px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 1px;
+  background-color: #CC0031;
+  font-family: FuturaLightC;
+  font-size: 18px;
 }
-</script>
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: relative;
+  background-color: #CC0031;
+  height: 350px;
+  width: 550px;
+  border-radius: 1px;
+  top: 100px;
+  left: 300px;
+  bottom: 0;
+  right: 15px;
+  border: 5px solid black;
+  z-index: 9;
+
+}
+
+.btncancel{position: relative;
+  left: -240px;
+  top: -220px;
+  font-size: 50px;
+  font-family: FuturaLightC;
+  background-color: #CC0031;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+.btncancel:hover{
+  color: white;
+}
+.popupHeader{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 90px;
+  z-index: 10;
+  text-align: center;
+  color: black;
+  font-family: Lovelace;
+  font-size: 50px;
+  text-align: center;
+}
+
+</style>
 </head>
 <body>
-<select id="pageselected">
-    <option value="page1.html">Page 1</option>
-    <option value="page2.html">Page 2</option>
-</select>
-<input type="button" onclick="changePage()" value="Change Page" />
-<iframe id="myiframe"></iframe>
+
+
+<button class="btn" onclick="openForm()">Купить</button>
+
+<div class="form-popup" placeholder="Поздравляем с преобретением!" id="myForm">
+<header class="popupHeader">      Поздравляем <br> с преобретением!
+    <button type="button" class="btncancel" onclick="closeForm()">X</button>
+
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
 </body>
 </html>
