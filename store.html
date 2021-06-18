@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .parfume{
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      left: 80px;
+      top: 300px;
+    }
+
+    .calendar2{
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      left: 80px;
+      top: 500px;
+    }
+
+    .book{
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      left: 80px;
+      top: 1000px;
+    }
+
+    .cassette{
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      left: 80px;
+      top: 1550px;
+    }
+
+    .poster{
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      left: 80px;
+      top: 2100px;
+    }
+    .logo{
+      position: fixed;
+      left: 80px;
+      top: 30px;
+      height: 43px;
+      width: 117px;
+      z-index: 101;
+    }
+
+    .mainlink{
+      position: fixed;
+      color: white;
+      width: 87px;
+      font-family: FuturaLightC;
+      /* margin: 30%; */
+      font-size: 32px;
+      text-decoration: none;
+       left: 280px;
+
+      top: 38px;
+      z-index: 101;
+
+    }
+
+    .mainlink:hover{
+      color: #FF003D;
+    }
+
+    .aboutlink{
+      position: fixed;
+      color: white;
+      width: 87px;
+      font-family: FuturaLightC;
+      /* margin: 30%; */
+      font-size: 32px;
+      text-decoration: none;
+       left: 480px;
+      top: 38px;
+      z-index: 101;
+    }
+
+    .aboutlink:hover{
+      color: #FF003D;
+    }
+
+    .calendarlink{
+      position: fixed;
+      color: white;
+      width: 87px;
+      font-family: FuturaLightC;
+      /* margin: 30%; */
+      font-size: 32px;
+      text-decoration: none;
+      left: 680px;
+      top: 38px;
+      z-index: 101;
+
+
+
+    }
+
+    .calendarlink:hover{
+      color: #FF003D;
+    }
+
+    .placeslink{
+      position: fixed;
+      color: white;
+      width: 87px;
+      font-family: FuturaLightC;
+      /* margin: 30%; */
+      font-size: 32px;
+      text-decoration: none;
+      left: 880px;
+      top: 38px;
+      z-index: 101;
+
+
+    }
+
+    .placeslink:hover{
+      color: #FF003D;
+    }
+
+    .storelink{
+      position: fixed;
+      color: white;
+      width: 87px;
+      font-family: FuturaLightC;
+      /* margin: 30%; */
+      font-size: 32px;
+      text-decoration: none;
+      left: 1080px;
+      top: 38px;
+      z-index: 101;
+
+    }
+
+    .storelink:hover{
+      color: #FF003D;
+    }
+
+            h1{
+        position: absolute;
+        width: 400px;
+        height: 117px;
+        left: 660px;
+        top: 100px;
+
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 39px;
+        line-height: 44px;
+        /* or 120% */
+
+
+        color: #FF003D;
+            }
+
+            h2{
+        position: absolute;
+        width: 400px;
+        height: 117px;
+        left: 660px;
+        top: 500px;
+
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 39px;
+        line-height: 46px;
+        /* or 120% */
+
+
+        color: #FF003D;
+            }
+
+            h3{
+        position: absolute;
+        width: 400px;
+        height: 117px;
+        left: 660px;
+        top: 1000px;
+
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 46px;
+        /* or 120% */
+
+
+        color: #FF003D;
+            }
+
+            h4{
+        position: absolute;
+        width: 400px;
+        height: 117px;
+        left: 660px;
+        top: 1500px;
+
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 39px;
+        line-height: 46px;
+        /* or 120% */
+
+
+        color: #FF003D;
+            }
+
+            h5{
+        position: absolute;
+        width: 400px;
+        height: 117px;
+        left: 660px;
+        top: 2030px;
+
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 39px;
+        line-height: 60px;
+        /* or 120% */
+
+
+        color: #FF003D;
+            }
+
+            p5{
+        position: absolute;
+        width: 424px;
+        height: 64px;
+        left: 660px;
+        top: 200px;
+
+        font-family: FuturaLightC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 26px;
+
+        color: #FFFFFF;
+        z-index: 10;
+            }
+
+        p6{
+    position: absolute;
+    width: 424px;
+    height: 64px;
+    left: 660px;
+    top: 600px;
+
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+    z-index: 10;
+        }
+
+         p7{
+      position: absolute;
+      width: 424px;
+      height: 64px;
+      left: 660px;
+      top: 1160px;
+
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 26px;
+
+      color: #FFFFFF;
+      z-index: 10;
+          }
+
+           p8{
+        position: absolute;
+        width: 424px;
+        height: 64px;
+        left: 660px;
+        top: 1665px;
+
+        font-family: FuturaLightC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 26px;
+
+        color: #FFFFFF;
+        z-index: 10;
+            }
+
+             p9{
+          position: absolute;
+          width: 424px;
+          height: 64px;
+          left: 660px;
+          top: 2160px;
+
+          font-family: FuturaLightC;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 26px;
+
+          color: #FFFFFF;
+          z-index: 10;
+              }
+
+            #boom{
+            position: relative;
+            width: 100%;
+            top: 2260px;
+            background: black;
+            height: 1px;
+
+            }
+            #menu{
+        position: fixed;
+        top: 0%;
+        width:100%;
+        height:80px;
+        background:black;
+        z-index: 100;
+        }
+
+        #futer{
+          position: relative;
+          width: 100%;
+          top: 2100px;
+          background: #FF003D;
+          height: 1px;
+        }
+        p13{
+          position: absolute;
+          width: 199px;
+          height: 30px;
+          left: 80px;
+          top: 2630px;
+
+          font-family: Lovelace;
+          font-style: light;
+          font-weight: light;
+          font-size: 30px;
+          line-height: 56px;
+
+          color: #FFFFFF;}
+        p11{
+          position: absolute;
+          width: 199px;
+          height: 30px;
+          right: 330px;
+          top: 2630px;
+
+          font-family: Lovelace;
+          font-style: light;
+          font-weight: light;
+          font-size: 30px;
+          line-height: 56px;
+
+          color: #FFFFFF;}
+
+      p14{
+        position: absolute;
+        width: 285px;
+        height: 48px;
+        left: 290px;
+        top: 2640px;
+
+        font-family: FuturaLightC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 38px;
+
+        color: #FFFFFF;
+        }
+
+        p10{
+          position: absolute;
+          width: 285px;
+          height: 48px;
+          left: 290px;
+          top: 2690px;
+
+          font-family: FuturaLightC;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 38px;
+
+          color: #FFFFFF;
+          }
+        p12{
+          position: absolute;
+          width: 285px;
+          height: 48px;
+          right: 80px;
+          top: 2630px;
+
+          font-family: FuturaLightC;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 38px;
+
+          color: #FFFFFF;
+          }
+
+          #button{
+      position: absolute;
+      width: 140px;
+      height: 39px;
+      right: 80px;
+      top: 380px;
+
+      border: 0.5px solid #FFFFFF;
+      box-sizing: border-box;
+      z-index: 10;
+          }
+
+        #button:hover{
+          border: 2px solid #FF003D;
+          background: rgba(255, 204, 216, 0.51);
+        }
+
+            p15{
+        position: absolute;
+        width: 74px;
+        height: 29px;
+        right: 100px;
+        top: 385px;
+
+        font-family: FuturaLightC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 31px;
+
+        color: #FFFFFF;
+        z-index: 10;
+        }
+
+        #button1{
+    position: absolute;
+    width: 140px;
+    height: 39px;
+    right: 80px;
+    top: 850px;
+
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    z-index: 10;
+        }
+
+      #button1:hover{
+        border: 2px solid #FF003D;
+        background: rgba(255, 204, 216, 0.51);
+      }
+
+          p16{
+      position: absolute;
+      width: 74px;
+      height: 29px;
+      right: 100px;
+      top: 855px;
+
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 31px;
+
+      color: #FFFFFF;
+      z-index: 10;
+      }
+
+      #button2{
+  position: absolute;
+  width: 140px;
+  height: 39px;
+  right: 80px;
+  top: 1350px;
+
+  border: 0.5px solid #FFFFFF;
+  box-sizing: border-box;
+  z-index: 10;
+      }
+
+    #button2:hover{
+      border: 2px solid #FF003D;
+      background: rgba(255, 204, 216, 0.51);
+    }
+
+        p17{
+    position: absolute;
+    width: 74px;
+    height: 29px;
+    right: 100px;
+    top: 1355px;
+
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+    z-index: 10;
+    }
+
+    #button3{
+position: absolute;
+width: 140px;
+height: 39px;
+right: 80px;
+top: 1880px;
+
+border: 0.5px solid #FFFFFF;
+box-sizing: border-box;
+z-index: 10;
+    }
+
+  #button3:hover{
+    border: 2px solid #FF003D;
+    background: rgba(255, 204, 216, 0.51);
+  }
+
+      p18{
+  position: absolute;
+  width: 74px;
+  height: 29px;
+  right: 100px;
+  top: 1885px;
+
+  font-family: FuturaLightC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+
+  color: #FFFFFF;
+  z-index: 10;
+  }
+
+  #button4{
+position: absolute;
+width: 140px;
+height: 39px;
+right: 80px;
+top: 2480px;
+
+border: 0.5px solid #FFFFFF;
+box-sizing: border-box;
+z-index: 10;
+  }
+
+#button4:hover{
+  border: 2px solid #FF003D;
+  background: rgba(255, 204, 216, 0.51);
+}
+
+    p19{
+position: absolute;
+width: 74px;
+height: 29px;
+right: 100px;
+top: 2485px;
+
+font-family: FuturaLightC;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 31px;
+
+color: #FFFFFF;
+z-index: 10;
+}
+
+
+
+
+
+    </style>
+  </head>
+
+
+
+  <body bgcolor="#000000">
+    <img class="logo" src="images/logo.png" alt="logo">
+    <a href="./main.html" class="mainlink">Главная</a>
+    <a href="./about.html" class="aboutlink">О нас</a>
+    <a href="./calendar.html" class="calendarlink">Билеты</a>
+    <a href="./places.html" class="placeslink">Места</a>
+    <a href="./store.html" class="storelink">Магазин</a>
+    <img class="pafrume" src="images/parfume.png" alt="parfume">
+    <img class="calendar2" src="images/calendar2.png" alt="calendar2">
+    <img class="cassette" src="images/cassette.png" alt="cassette">
+    <img class="book" src="images/book.png" alt="book">
+    <img class="poster" src="images/poster.png" alt="poster">
+    <h1>Духи «‎Тихий ужас»</h1>
+    <p5>Уникальный аромат вашего личного страха.
+Лимитированная коллекция. </p5>
+    <h2>Календарь</h2>
+    <p6>Ваш каждый день на устрашающем календаре со страхами на выбор. </p6>
+    <h3>Путеводитель по «‎Улице страхов»</h3>
+    <p7>Путеводитель с подробными направляющими, картой местности и историей. </p7>
+    <h4>Кассета
+с воспоминаниями </h4>
+    <p8>Сделайте заказ заранее или на месте и мы запишем все ваше приключение. </p8>
+    <h5>Плакаты</h5>
+    <p9>Повсесьте плакат на видное место, пусть Улица страхов всегда напоминает о себе. </p9>
+    <div id="menu"></div>
+    <div id="futer"></div>
+    <div id="boom"></div>
+    <div id="button"></div>
+    <div id="button1"></div>
+    <div id="button2"></div>
+    <div id="button3"></div>
+    <div id="button4"></div>
+    <p13>Телефон</p13>
+    <p14>+7901-420-21-01</p14>
+    <p10>+7999-841-53-81</p10>
+    <p11>Адрес</p11>
+    <p12>ул. Маковского, 2, Одинцово, Московская обл., Россия</p12>
+    <p15>Купить</p15>
+    <p16>Купить</p16>
+    <p17>Купить</p17>
+    <p18>Купить</p18>
+    <p19>Купить</p19>
+    <div class="modal-win">
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,78 @@
+
+/*
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+article > * { width: calc(100% - 40px); }
+}
+```css
+@media only screen and (min-width: 1224px) {
+  /* Desktop */
+}
+
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* iPad */
+}
+
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { */
+  /* iPad Portrait */
+}
+
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { */
+  /* iPad Landscape */
+} */ */
+
+@media all and (min-device-width: 375px) {
+
+  
+
+  <style type="text/css">
+  .deathAnimation {
+    position:relative;
+    margin:0 auto;
+    top: 2110px;
+    left: 5500;
+    right: 90000;
+    display: block;
+    z-index: 120;
+  }
+
+  .deathAnimation img {
+    position:absolute;
+    top: 8510px;
+    right: -20000px;
+    /* left: -4400; */
+    z-index: 100;
+  }
+
+
+  .deathAnimation img.deathred {opacity:0;filter:alpha(opacity=0); z-index: 100;}
+  .deathAnimation:hover img.deathred {opacity:1;filter:alpha(opacity=100);z-index: 110;}
+  .deathAnimation:hover img.death, .deathAnimation img.death:hover {opacity:0;filter:alpha(opacity=0);z-index: 120;}
+
+  }
+}
+
+p1{
+  position: absolute;
+  left: 8.51%;
+  right: 66.25%;
+  top: 2400px;
+  /* bottom: 79.42%; */
+
+  font-family: Mason Chronicles;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 90px;
+  /* line-height: 153px; */
+
+  color: #000000;
+
+}
+
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  /* iPhone Portrait */
+}
+
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) { */
+  /* iPhone Landscape */
+}
+``` */ */

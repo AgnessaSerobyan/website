@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>calendar</title>
+    <style>
+
+    .mainlink{
+      position: fixed;
+      color: white;
+      width: 87px;
+      font-family: FuturaLightC;
+      /* margin: 30%; */
+      font-size: 32px;
+      text-decoration: none;
+       left: 280px;
+
+      top: 38px;
+      z-index: 101;
+
+    }
+
+    .mainlink:hover{
+       color: black;
+    }
+
+    .aboutlink{
+      position: fixed;
+      color: white;
+      width: 87px;
+      font-family: FuturaLightC;
+      /* margin: 30%; */
+      font-size: 32px;
+      text-decoration: none;
+       left: 480px;
+      top: 38px;
+      z-index: 101;
+    }
+
+    .aboutlink:hover{
+       color: black;
+    }
+
+    .calendarlink{
+      position: fixed;
+      color: white;
+      width: 87px;
+      font-family: FuturaLightC;
+      /* margin: 30%; */
+      font-size: 32px;
+      text-decoration: none;
+      left: 680px;
+      top: 38px;
+      z-index: 101;
+
+
+
+    }
+
+    .calendarlink:hover{
+       color: black;
+    }
+
+    .placeslink{
+      position: fixed;
+      color: white;
+      width: 87px;
+      font-family: FuturaLightC;
+      /* margin: 30%; */
+      font-size: 32px;
+      text-decoration: none;
+      left: 880px;
+      top: 38px;
+      z-index: 101;
+
+
+    }
+
+    .placeslink:hover{
+       color: black;
+    }
+
+    .storelink{
+      position: fixed;
+      color: white;
+      width: 87px;
+      font-family: FuturaLightC;
+      /* margin: 30%; */
+      font-size: 32px;
+      text-decoration: none;
+      left: 1080px;
+      top: 38px;
+      z-index: 101;
+
+    }
+
+    .storelink:hover{
+       color: black;
+    }
+                    .logo2{
+                      position: fixed;
+                      left: 80px;
+                      top: 30px;
+                      height: 43px;
+                      width: 117px;
+                    }
+
+      .look-calendar {
+        position: relative;
+        width:1080px;
+        /* padding:6px; */
+        top: 10px; left: -20px;
+
+      }
+      #calendar {
+        position: relative;
+        width: 45%;
+        line-height: 1.2em;
+        font-size: 15px;
+        text-align: center;
+        border-spacing:0px;
+        top: -60px; left: 80px;
+      }
+      #calendar tr.dn td {
+        position: relative;
+        font-size: 15px;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 53px;
+        top: -120px; left: -80px;
+
+
+      }
+      #calendar thead tr:last-child {
+        position: relative;
+        font-size: small;
+        color: #FFFFFF;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 53px;
+        top: 120px; left: 80px;
+
+      }
+      #calendar thead tr:nth-child(1) td:nth-child(2) {
+        position: relative;
+        color: #FFFFFF;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 53px;
+      }
+      #calendar thead tr:nth-child(1) td:nth-child(1):hover,
+      #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+        cursor: pointer;
+      }
+      #calendar tbody td {
+        position: relative;
+        color: #FFFFFF;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 53px;
+      }
+      #calendar tbody td:nth-child(n+6),
+      #calendar .holiday {
+
+        color: FFFFFF;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 53px;
+      }
+
+      input[type="text"] {
+        position: relative;
+        display:block;
+        width: 340px;
+        margin: 15px;
+        left: 720px;
+        padding-top: 830px;
+        height: 37px;
+        padding: 0 18px;
+        font-size: 15px;
+        text-align: center;
+        color: white;
+        font-family: FuturaLightC;
+        border-radius: 4px;
+        background-color: #CC0031;
+        border: none;
+        border-bottom: 1px solid white;
+      }
+      input::placeholder {
+  color: white;
+  font-family: FuturaLightC;
+}
+
+      button {
+        position: relative;
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: 400;
+        left: 680px;
+        top: 280px;
+        letter-spacing: -.022em;
+        font-family: FuturaLightC;
+        background-color: #CC0031;
+        background: linear-gradient(#CC0031,#CC0031);
+        border: 1px solid white;
+        border-radius: 1px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        min-width: 30px;
+        padding: 5px 20px;
+        text-align: center;
+        white-space: nowrap;
+        /* margin: 125px auto; */
+      }
+      /* #calendar tbody td.today {
+        background: #CC0031;
+        color: #CC0031;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 53px;
+      } */
+
+    </style>
+    </style>
+  </head>
+  <body bgcolor="CC0031">
+    <form class="" action="calendar.html" method="post">
+    <input type="text" name="" value="" placeholder="Имя">
+    <input type="text" name="" value="" placeholder="Фамилия">
+    <input type="text" name="" value="" placeholder="Электронный адрес">
+
+
+      <button type="submit" name="button">Купить</button>
+    </form>
+     <p1><a href="./main.html" class="mainlink">Главная</a></p1>
+    <a href="./about.html" class="aboutlink">О нас</a>
+    <a href="./calendar.html" class="calendarlink">Билеты</a>
+    <a href="./places.html" class="placeslink">Места</a>
+    <a href="./store.html" class="storelink">Магазин</a>
+    <img class="logo2" src="images/logo2.png" alt="logo2">
+    <div class="look-calendar">
+<table id="calendar">
+  <thead>
+  <tr>
+  <td><b>‹</b>
+  <td colspan="5">
+  <td><b>›</b>
+  <tr class="dn"><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+  </thead>
+  <tbody></tbody>
+</table>
+</div>
+
+
+    <script>
+  function calendar(id, year, month) {
+    var Dlast = new Date(year, month + 1, 0).getDate(),
+      D = new Date(year, month, Dlast),
+      DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
+      DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
+      calendar = '<tr>',
+      month = ["I месяц", "II месяц", "III месяц", "IV месяц", "V месяц", "VI месяц", "VII месяц", "VIII месяц", "IX месяц", "X месяц", "XI месяц", "XII месяц"];
+    if (DNfirst != 0) {
+      for (var i = 1; i < DNfirst; i++) calendar += '<td>';
+    } else {
+       for (var i = 0; i < 6; i++) calendar += '<td>';
+    }
+    for (var i = 1; i <= Dlast; i++) {
+       if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+        calendar += '<td class="today">' + i;
+       } else {
+         calendar += '<td>' + i;
+       }
+       if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
+         calendar += '<tr>';
+       }
+    }
+    for (var i = DNlast; i < 7; i++) calendar += '<td> ';
+    document.querySelector('#' + id + ' tbody').innerHTML = calendar;
+    document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML = month[D.getMonth()] + ' ' + D.getFullYear();
+    document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
+    document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
+    if (document.querySelectorAll('#' + id + ' tbody tr').length < 6) {
+        // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+    document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td> <td> <td> <td> <td> <td> <td> ';
+    }
+  }
+  calendar("calendar", new Date().getFullYear(), new Date().getMonth());
+        // переключатель минус месяц
+  document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+    calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) - 1);
+  }
+        // переключатель плюс месяц
+  document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+    calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
+  }
+</script>
+  </body>
+</html>

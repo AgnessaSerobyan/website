@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+var changePage = function() {
+    var iframe = document.getElementById("myiframe");  // One of the many ways to select your iframe
+    var select = document.getElementById("pageselected");
+    var url = select.options[select.selectedIndex].value;
+    iframe.src = url;
+}
+</script>
+</head>
+<body>
+<select id="pageselected">
+    <option value="page1.html">Page 1</option>
+    <option value="page2.html">Page 2</option>
+</select>
+<input type="button" onclick="changePage()" value="Change Page" />
+<iframe id="myiframe"></iframe>
+</body>
+</html>
