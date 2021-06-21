@@ -1,95 +1,190 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.btn {
-  position: relative;
-  color: white;
-  padding: 12px 38px;
-  width: 190px;
-  height: 120;
-  line-height: 35px;
-  top: 50px;
-  text-decoration: none;
-  left: 920px;
-  cursor: pointer;
-  border: 1px solid white;
-  border-radius: 1px;
-  background-color: #CC0031;
-  font-family: FuturaLightC;
-  font-size: 18px;
-}
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    /* .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    }
+    .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    /* элементы меню */
+    .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #FF003D;
+    font-style: normal;
+    font-family: Lovelace;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    }
+    .menu__item:hover {
+    color: white;
+    }
+    /* добавляем "гамбургер" */
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    }
+    .menu__btn > span::before {
+    content: '';
+    top: -8px;
+    }
+    .menu__btn > span::after {
+    content: '';
+    top: 8px;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+    }}
 
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: relative;
-  background-color: #CC0031;
-  height: 350px;
-  width: 550px;
-  border-radius: 1px;
-  top: 100px;
-  left: 300px;
-  bottom: 0;
-  right: 15px;
-  border: 5px solid black;
-  z-index: 9;
+    @media screen and (min-width: 321px){
 
-}
+    .menu__box{ display: none;
+    opacity: 0%;}
+    .menu__item{display: none;
+    opacity: 0%;}
+    .menu__box{opacity: 0%; display: none;}
+    .menu__btn{opacity: 0%; display: none;}
+    #menu__toggle{opacity: 0%; display: none;}
+    .hamburger-menu{opacity: 0%; display: none;}
+    .checkbox{
+    display: none;
+    }} */
 
-.btncancel{position: relative;
-  left: -240px;
-  top: -220px;
-  font-size: 50px;
-  font-family: FuturaLightC;
-  background-color: #CC0031;
-  color: black;
-  border: none;
-  cursor: pointer;
+
+
+.menu__btn {
+display: flex; /* используем flex для центрирования содержимого */
+align-items: center;  /* центрируем содержимое кнопки */
+position: fixed;
+top: 20px;
+left: 20px;
+width: 26px;
+height: 26px;
+cursor: pointer;
+z-index: 1;
 }
-.btncancel:hover{
-  color: white;
-}
-.popupHeader{
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 90px;
-  z-index: 10;
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
   text-align: center;
-  color: black;
+  background-color: black;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #FF003D;
+  font-style: normal;
   font-family: Lovelace;
-  font-size: 50px;
-  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
 }
-
-</style>
-</head>
-<body>
-
-
-<button class="btn" onclick="openForm()">Купить</button>
-
-<div class="form-popup" placeholder="Поздравляем с преобретением!" id="myForm">
-<header class="popupHeader">      Поздравляем <br> с преобретением!
-    <button type="button" class="btncancel" onclick="closeForm()">X</button>
-
-  </form>
+.menu__item:hover {
+  color: white;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+    </style>
+  </head>
+  <body>
+    <div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <ul class="menu__box">
+    <li><a class="menu__item" href="./about.html">Главная</a></li>
+    <li><a class="menu__item" href="#">О нас</a></li>
+    <li><a class="menu__item" href="#">Места</a></li>
+    <li><a class="menu__item" href="#">Билеты</a></li>
+    <li><a class="menu__item" href="#">Магазин</a></li>
+  </ul>
 </div>
 
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
-
-</body>
+  </body>
 </html>

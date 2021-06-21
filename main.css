@@ -1,0 +1,30 @@
+@import "main.html";
+
+@media only screen and (max-width: 320px) {
+  h1{ position: absolute;
+  left: 5px;
+  top: 30px;
+  font-size: 70px;
+  line-height: 70px;}
+.logo{ display: none;}
+.compas{
+  width: 150px;
+  height: 150px;
+  left: 90px;
+  top: 350px;
+  }
+  .mainlink{position: fixed;
+  color: white;
+  width: 87px;
+  font-family: FuturaLightC;
+  /* margin: 30%; */
+  font-size: 14px;
+  text-decoration: none;
+   left: 80px;
+
+  top: 38px;
+    }
+  .aboutlink{font-size: 15px;}
+  .storelink{font-size: 15px;}
+  .calendarlink{font-size: 15px;}
+}
