@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <!-- <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,27 +17,111 @@
 
     h1{
     position: absolute;
-    left: 35px !important;
-    top: 30px !important;
+    left: 5px !important;
+    top: 60px !important;
     font-size: 70px !important;
     line-height: 70px !important;}
   .compas{
-    width: 250px !important;
-    height: 250px !important;
-    left: 90px !important;
-    top: 450px !important;
+    width: 220px !important;
+    height: 220px !important;
+    left: 50px !important;
+    top: 290px !important;
     }
     .logo{
       position: fixed;
-      left: 80px;
-      top: 30px;
+      left: 240px !important;
+      top: 20px !important;
       height: 20px !important;
       width: 54px !important;
     }
-    .mainlink{
+    .mainlink, .aboutlink, .storelink, .calendarlink .placeslink{ display: none;
+    }
+    #menu__toggle {
+      opacity: 0;
+    }
+
+    .menu__btn {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 100;
+
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #FF003D;
+
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+
+    }
+
+    .menu__box {
+      display: block;
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      left: -100%;
+      width: 320px !important;
+      height: 100% !important;
+      margin: 0 !important;
+      padding: 80px 0 !important;
+      list-style: none !important;
+      text-align: center !important;
+      background-color: black !important;
+      box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+      z-index: 10;
+    }
+    /* элементы меню */
+    .menu__item {
+      display: block !important;
+      padding: 12px 24px !important;
+      color: #FF003D !important;
+      font-family: Lovelace !important;
       font-size: 20px !important;
+      font-weight: 600 !important;
+      text-decoration: none !important;
+      background-color: black !important;
+
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+      visibility: visible;
+      left: 0;
     }
   }
+ @media only screen and (min-width: 321px){
+  .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
+}
   h1{
     position: absolute;
     /* width: 1305px;
@@ -198,7 +282,19 @@
         <a href="./places.html" class="placeslink">Места</a>
         <a href="./store.html" class="storelink">Магазин</a>
 
-
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="./main.html">Главная</a></li>
+            <li><a class="menu__item" href="./about.html">О нас</a></li>
+            <li><a class="menu__item" href="./calendar.html">Билеты</a></li>
+            <li><a class="menu__item" href="./places.html">Места</a></li>
+            <li><a class="menu__item" href="./store.html">Магазин</a></li>
+          </ul>
+        </div>
 
     <!-- <p1>О нас</p1>
     <p2>Места</p2>

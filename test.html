@@ -1,112 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta charset="utf-8">
     <title></title>
     <style media="screen">
-    /* .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-    }
-    .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: black;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    }
-    /* элементы меню */
-    .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #FF003D;
-    font-style: normal;
-    font-family: Lovelace;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    }
-    .menu__item:hover {
-    color: white;
-    }
-    /* добавляем "гамбургер" */
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #616161;
-    }
-    .menu__btn > span::before {
-    content: '';
-    top: -8px;
-    }
-    .menu__btn > span::after {
-    content: '';
-    top: 8px;
-    }
-    #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-    }
-    #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-    }}
-
-    @media screen and (min-width: 321px){
-
-    .menu__box{ display: none;
-    opacity: 0%;}
-    .menu__item{display: none;
-    opacity: 0%;}
-    .menu__box{opacity: 0%; display: none;}
-    .menu__btn{opacity: 0%; display: none;}
-    #menu__toggle{opacity: 0%; display: none;}
-    .hamburger-menu{opacity: 0%; display: none;}
-    .checkbox{
-    display: none;
-    }} */
-
-
+    /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
 
 .menu__btn {
-display: flex; /* используем flex для центрирования содержимого */
-align-items: center;  /* центрируем содержимое кнопки */
-position: fixed;
-top: 20px;
-left: 20px;
-width: 26px;
-height: 26px;
-cursor: pointer;
-z-index: 1;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+   z-index: 100;
+
 }
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+   : 11;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+   : 11;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+   : 11;
+}
+
 .menu__box {
   display: block;
   position: fixed;
@@ -119,51 +55,31 @@ z-index: 1;
   padding: 80px 0;
   list-style: none;
   text-align: center;
-  background-color: black;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-}
+  background-color: #FF003D;
+z-index: 10;}
+/*  : 10;} */
 /* элементы меню */
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: #FF003D;
-  font-style: normal;
+  color: white;
   font-family: Lovelace;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
+  background-color: #FF003D;  : 11;
 }
-.menu__item:hover {
-  color: white;
-}
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
+
 #menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
+  transform: rotate(45deg);  : 11;
 }
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
-  transform: rotate(0);
+  transform: rotate(0);  : 11;
 }
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
-  transform: rotate(90deg);
+  transform: rotate(90deg);  : 11;
 }
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
@@ -173,18 +89,17 @@ z-index: 1;
   </head>
   <body>
     <div class="hamburger-menu">
-  <input id="menu__toggle" type="checkbox" />
-  <label class="menu__btn" for="menu__toggle">
-    <span></span>
-  </label>
-  <ul class="menu__box">
-    <li><a class="menu__item" href="./about.html">Главная</a></li>
-    <li><a class="menu__item" href="#">О нас</a></li>
-    <li><a class="menu__item" href="#">Места</a></li>
-    <li><a class="menu__item" href="#">Билеты</a></li>
-    <li><a class="menu__item" href="#">Магазин</a></li>
-  </ul>
-</div>
-
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="./main.html">Главная</a></li>
+        <li><a class="menu__item" href="./about.html">О нас</a></li>
+        <li><a class="menu__item" href="./calendar.html">Билеты</a></li>
+        <li><a class="menu__item" href="./places.html">Места</a></li>
+        <li><a class="menu__item" href="./store.html">Магазин</a></li>
+      </ul>
+    </div>
   </body>
 </html>

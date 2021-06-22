@@ -1,14 +1,141 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
+<meta name="viewport" content="width=device-width">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
     <title>Улица страха</title>
   </head>
   <style>
+@media only screen and (max-width: 320px) {
 
+  .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+  }
+  .logo{
+    position: fixed;
+    left: 1000px !important;
+    top: 60px !important;
+    height: 81px !important;
+    width: 220px !important;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    width: 120px;
+    height: 100px;
+    cursor: pointer;
+    z-index: 100;
+
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: #FF003D;
+
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -40px;
+
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 40px;
+
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 1220px ;
+    height: 100% ;
+    margin: 0;
+    padding: 80px 0 ;
+    list-style: none ;
+    text-align: center ;
+    background-color: black;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 10;
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 42px 94px;
+    color: #FF003D;
+    font-family: Lovelace;
+    font-size: 80px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: black;
+    top: 30px;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  p1{
+    position: absolute;
+     width: 990px !important;
+     height: 170px;
+     left: 80px;
+     top: 650px !important;
+
+     font-family: FuturaLightC;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 50px !important;
+     line-height: 54px !important;
+
+     color: #FFFFFF;
+  }
+
+  h1{
+    position: absolute;
+    height: 192px;
+left: 80px;
+top: 260px !important;
+
+font-family: Lovelace;
+font-style: normal;
+font-weight: normal;
+font-size: 110px !important;
+line-height: 113px !important;
+
+color: #FF003D;
+
+  }
+}
+@media only screen and (min-width: 321px){
+ .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
+}
 
 
   .logo{
@@ -162,6 +289,20 @@ color: #FF003D;
         <a href="./calendar.html" class="calendarlink">Билеты</a>
         <a href="./places.html" class="placeslink">Места</a>
         <a href="./store.html" class="storelink">Магазин</a>
+
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="./main.html">Главная</a></li>
+            <li><a class="menu__item" href="./about.html">О нас</a></li>
+            <li><a class="menu__item" href="./calendar.html">Билеты</a></li>
+            <li><a class="menu__item" href="./places.html">Места</a></li>
+            <li><a class="menu__item" href="./store.html">Магазин</a></li>
+          </ul>
+        </div>
 
 
 
