@@ -1,9 +1,280 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Места</title>
+    <meta name="viewport" content="width=device-width">
     <style media="screen">
+
+    @media only screen and (max-width: 320px) {
+
+      .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+      }
+
+      .logo2{
+        position: fixed;
+        left: 860px !important;
+        top: 70px !important;
+        height: 81px !important;
+        width: 220px !important;
+      }
+      #menu__toggle {
+        opacity: 0;
+      }
+
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: 80px;
+        width: 120px;
+        height: 100px;
+        cursor: pointer;
+        z-index: 100;
+
+      }
+
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        background-color: white;
+         : 11;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -40px;
+         : 11;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 40px;
+         : 11;
+      }
+
+      .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 1220px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #CC0031;
+      z-index: 10;}
+      /*  : 10;} */
+      /* элементы меню */
+      .menu__item {
+        display: block;
+        padding: 42px 94px;
+        color: white;
+        font-family: Lovelace;
+        font-size: 80px;
+        font-weight: 400;
+        text-decoration: none;
+        background-color: #CC0031;
+      }
+
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);  : 11;
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);  : 11;
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);  : 11;
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+      .windowlink{
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 300px !important;
+        line-height: 351px;
+        text-align: center;
+        left: 384px;
+        top: 220px !important;
+
+      }
+
+
+
+
+      .labirintlink{
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 270px;
+        line-height: 351px;
+        text-align: center;
+        left: 340px;
+        top: 510px !important;
+      }
+
+
+
+      .scenelink{
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 270px;
+        line-height: 351px;
+        text-align: center;
+        left: 300px;
+        top: 780px !important;
+      }
+
+
+      .zallink{
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 270px;
+        line-height: 351px;
+        text-align: center;
+        left: 280px;
+        top: 1050px !important;
+
+      }
+
+
+
+      .indexlink{
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 270px;
+        line-height: 351px;
+        text-align: center;
+        left: 310px !important;
+        top: 1320px !important;
+
+      }
+
+      p5{ top: 260px !important;}
+      p6{ top: 345px !important;font-size: 28px !important;}
+      p7{ top: 530px !important;}
+      p13{ top: 615px !important; font-size: 28px !important;}
+      p14{ top: 1070px !important;}
+      p15{ top: 1155px !important; font-size: 28px !important;}
+      p16{ top: 835px !important;}
+      p17{ top: 925px !important; font-size: 28px !important;}
+      p18{ top: 1365px !important;}
+      p19{ top: 1455px !important; font-size: 28px !important;}
+
+      #futer{
+        width: 1200px !important;
+        /* left: 100px !important; */
+        top: 1800px !important;
+        background: black;
+        height: 1px;
+      }
+      p8{
+      position: absolute;
+      width: 199px;
+      height: 30px;
+      left: 80px;
+      top: 1900px !important;
+
+      font-family: Lovelace;
+      font-style: light;
+      font-weight: light;
+      font-size: 35px !important;
+      line-height: 56px;
+
+      color: black;}
+
+      p11{
+      position: absolute;
+      width: 199px;
+      height: 30px;
+      left: 630px !important;
+      top: 1900px !important;
+      font-family: Lovelace;
+      font-style: light;
+      font-weight: light;
+      font-size: 35px !important;
+      line-height: 56px;
+
+      color: black;}
+
+      p9{
+      position: absolute;
+      width: 285px;
+      height: 48px;
+      left: 290px;
+      top: 1910px !important;
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px !important;
+      line-height: 38px;
+
+      color: black;
+      }
+
+      p10{
+      position: absolute;
+      width: 285px;
+      height: 48px;
+      left: 290px;
+      top: 1960px !important;
+
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px !important;
+      line-height: 38px;
+
+      color: black;
+      }
+
+      p12{
+      position: absolute;
+      width: 285px;
+      height: 48px;
+      left: 810px !important;
+      top: 1900px !important;
+
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px !important;
+      line-height: 38px;
+
+      color: black;
+      }
+
+    }
+
     .mainlink{
       position: fixed;
       color: white;
@@ -96,6 +367,9 @@
     .storelink:hover{
        color: black;
     }
+    @media only screen and (min-width: 321px){
+     .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
+    }
             .logo2{
               position: fixed;
               left: 80px;
@@ -172,40 +446,7 @@
 
             }
 
-            /* h2{
-      position: absolute;
-      width: 96px;
-      height: 231px;
-      left: 340px;
-      top: 160px;
 
-      font-family: Lovelace;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 270px;
-      line-height: 351px;
-      text-align: center;
-
-      color: #FFFFFF;
-
-      }  */
-
-      /* .labirintlink{
-        position: absolute;
-        width: 96px;
-        height: 231px;
-        left: 340px;
-        top: 180px;
-
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 270px;
-        line-height: 351px;
-        text-align: center;
-
-        color: #FFFFFF;
-      } */
       .windowlink{
         position: absolute;
         color: white;
@@ -345,23 +586,7 @@
       color: #000000;
 
     }
-    h3{
-  position: absolute;
-  width: 96px;
-  height: 231px;
-  left: 290px;
-  top: 380px;
 
-  font-family: Lovelace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 270px;
-  line-height: 351px;
-  text-align: left;
-
-  color: #FFFFFF;
-
-  }
 
   p14{
   position: absolute;
@@ -625,7 +850,19 @@ height: 1px;
     <a href="./index.html" class="zallink">IV</a>
     <a href="./window.html" class="windowlink">I</a>
     <a href="./zal.html" class="indexlink">V</a>
-
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="./main.html">Главная</a></li>
+        <li><a class="menu__item" href="./about.html">О нас</a></li>
+        <li><a class="menu__item" href="./calendar.html">Билеты</a></li>
+        <li><a class="menu__item" href="./places.html">Места</a></li>
+        <li><a class="menu__item" href="./store.html">Магазин</a></li>
+      </ul>
+    </div>
 
     <img class="logo2" src="images/logo2.png" alt="logo2">
     <p5>Окна страха</p5>

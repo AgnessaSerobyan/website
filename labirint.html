@@ -1,9 +1,239 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Лабиринт</title>
+    <meta name="viewport" content="width=device-width">
+
     <style media="screen">
+
+
+
+    @media only screen and (max-width: 320px) {
+
+      .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+      }
+      .logo{
+        position: fixed;
+        left: 940px !important;
+        top: 60px !important;
+        height: 81px !important;
+        width: 220px !important;
+      }
+      #menu__toggle {
+        opacity: 0;
+      }
+
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: 80px;
+        width: 120px;
+        height: 100px;
+        cursor: pointer;
+        z-index: 100;
+
+      }
+
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        background-color: #FF003D;
+
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -40px;
+
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 40px;
+
+      }
+
+      .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 1220px ;
+        height: 100% ;
+        margin: 0;
+        padding: 80px 0 ;
+        list-style: none ;
+        text-align: center ;
+        background-color: black;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 10;
+      }
+      /* элементы меню */
+      .menu__item {
+        display: block;
+        padding: 42px 94px;
+        color: #FF003D;
+        font-family: Lovelace;
+        font-size: 80px;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: black;
+        top: 30px;
+      }
+
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+      #futer{
+        width: 1200px !important;
+        /* left: 100px !important; */
+        top: 1900px !important;
+        background: black;
+        height: 2px !important;
+      }
+    p8{
+    position: absolute;
+    width: 199px;
+    height: 30px;
+    left: 80px;
+    top: 1960px !important;
+
+    font-family: Lovelace;
+    font-style: light;
+    font-weight: light;
+    font-size: 35px !important;
+    line-height: 56px;
+
+    color: black;}
+
+    p11{
+    position: absolute;
+    width: 199px;
+    height: 30px;
+    left: 630px !important;
+    top: 1960px !important;
+    font-family: Lovelace;
+    font-style: light;
+    font-weight: light;
+    font-size: 35px !important;
+    line-height: 56px;
+
+    color: black;}
+
+    p9{
+    position: absolute;
+    width: 285px;
+    height: 48px;
+    left: 290px;
+    top: 1970px !important;
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px !important;
+    line-height: 38px;
+
+    color: black;
+    }
+
+    p10{
+    position: absolute;
+    width: 285px;
+    height: 48px;
+    left: 290px;
+    top: 2030px !important;
+
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px !important;
+    line-height: 38px;
+
+    color: black;
+    }
+
+    p12{
+    position: absolute;
+    width: 285px;
+    height: 48px;
+    left: 810px !important;
+    top: 1960px !important;
+
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px !important;
+    line-height: 38px;
+
+    color: black;
+    }
+    .labirint{
+    position: absolute;
+    width: 1050px !important;
+    height: 630px !important;
+    left: 80px;
+    top: 520px !important;
+    }
+    .labirint2{
+    position: absolute;
+    width: 1057px !important;
+    height: 640px !important;
+    left: 80px;
+    top: 1200px !important;
+
+    }
+
+    h1{
+      position: absolute;
+      width: 800px !important;
+      height: 69px;
+      left: 200px !important;
+      top: 190px !important;
+
+      font-family: Lovelace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 65px !important;
+      line-height: 70px;
+      text-align: center;
+
+      color: #FF003D;
+
+    }
+
+    p1{
+      position: absolute;
+      width: 820px !important;
+      height: 156px;
+      left: 80px;
+      top: 350px !important;
+
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px !important;
+      line-height: 26px;
+
+      color: #FFFFFF;
+    }
+  }
       .logo{
         position: fixed;
         left: 80px;
@@ -256,6 +486,9 @@
 
             color: #FFFFFF;
             }
+            @media only screen and (min-width: 321px){
+             .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
+            }
     </style>
   </head>
   <body bgcolor="#000000">
@@ -279,5 +512,18 @@
     <p10>+7999-841-53-81</p10>
     <p11>Адрес</p11>
     <p12>ул. Маковского, 2, Одинцово, Московская обл., Россия</p12>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="./main.html">Главная</a></li>
+        <li><a class="menu__item" href="./about.html">О нас</a></li>
+        <li><a class="menu__item" href="./calendar.html">Билеты</a></li>
+        <li><a class="menu__item" href="./places.html">Места</a></li>
+        <li><a class="menu__item" href="./store.html">Магазин</a></li>
+      </ul>
+    </div>
   </body>
 </html>

@@ -7,47 +7,407 @@
   <link rel="stylesheet" href="ie.css">
     <style media="screen">
 
-    /* .parfume{
-      position: absolute;
-      width: 420px;
-      height: 420px;
-      left: -180px;
-      top: 300px;
-    } */
-    @media screen and (max-width: 320px) {
+    @media only screen and (max-width: 320px) {
 
+      .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+      }
+      .logo{
+        position: fixed;
+        left: 780px !important;
+        top: 60px !important;
+        height: 81px !important;
+        width: 220px !important;
+        z-index: 1 !important;
+      }
+      #menu__toggle {
+        opacity: 0;
+      }
 
-      .calendar2{
-        position: absolute;
-        width: 20px;
-        height: 20px;
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 80px;
         left: 80px;
-        top: 500px;
-      }
-      h1{
-        position: absolute;
-        width: 400px;
-        height: 117px;
-        left: 660px;
-        top: 100px;
+        width: 120px;
+        height: 100px;
+        cursor: pointer;
+        z-index: 100;
 
+      }
+
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        background-color: #FF003D;
+
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -40px;
+
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 40px;
+
+      }
+
+      .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 1220px ;
+        height: 100% ;
+        margin: 0;
+        padding: 80px 0 ;
+        list-style: none ;
+        text-align: center ;
+        background-color: black;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 10;
+      }
+      /* элементы меню */
+      .menu__item {
+        display: block;
+        padding: 42px 94px;
+        color: #FF003D;
         font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 9px;
-        line-height: 44px;
-        /* or 120% */
+        font-size: 80px;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: black;
+        top: 30px;
+      }
 
-
-        color: #FF003D;      }
-
-      p5{
-        position: absolute;
-        left: 4px;
-        font-size: 9px;
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+      #futer{
+        width: 1080px !important;
+        /* left: 100px !important; */
+        top: 5730px !important;
+        background: black;
+        height: 2px !important;
+      }
+      #boom{
+        top: 5920px !important;
 
       }
-}
+      p13{
+      position: absolute;
+      width: 199px;
+      height: 30px;
+      left: 80px;
+      top: 5790px !important;
+
+      font-family: Lovelace;
+      font-style: light;
+      font-weight: light;
+      font-size: 35px !important;
+      line-height: 56px;
+
+      color: black;}
+
+      p11{
+      position: absolute;
+      width: 199px;
+      height: 30px;
+      left: 530px !important;
+      top: 5790px !important;
+      font-family: Lovelace;
+      font-style: light;
+      font-weight: light;
+      font-size: 35px !important;
+      line-height: 56px;
+
+      color: black;}
+
+      p14{
+      position: absolute;
+      width: 285px;
+      height: 48px;
+      left: 290px;
+      top: 5800px !important;
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px !important;
+      line-height: 38px;
+
+      color: black;
+      }
+
+      p10{
+      position: absolute;
+      width: 285px;
+      height: 48px;
+      left: 290px;
+      top: 5860px !important;
+
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px !important;
+      line-height: 38px;
+
+      color: black;
+      }
+
+      p12{
+      position: absolute;
+      width: 285px;
+      height: 48px;
+      left: 710px !important;
+      top: 5790px !important;
+
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px !important;
+      line-height: 38px;
+
+      color: black;
+      }
+
+          .calendar2{
+            position: absolute;
+            width: 800px !important;
+            height: 800px !important;
+            left: 140px !important;
+            top: 1140px !important;
+          }
+        .parfume{ position: absolute;
+          width: 800px !important;
+          height: 800px !important;
+          top: 200px !important;
+          left: 140px !important;
+        }
+          .book{
+            position: absolute;
+            width: 800px !important;
+            height: 800px !important;
+            left: 140px !important;
+            top: 2270px !important;
+          }
+
+          .cassette{
+            position: absolute;
+            width: 800px !important;
+            height: 800px !important;
+            left: 140px !important;
+            top: 3470px !important;
+          }
+
+          .poster{
+            position: absolute;
+            width: 800px !important;
+            height: 800px !important;
+            left: 140px !important;
+            top: 4740px !important;
+          }
+
+          #button{
+            left: 425px !important;
+            top: 870px !important;
+            width: 260px !important;
+            height: 90px !important;
+            z-index: 1 !important;
+          }
+
+         #button1{
+           left: 425px !important;
+           top: 1940px !important;
+           width: 260px !important;
+           height: 90px !important;
+           z-index: 1 !important;
+
+         }
+
+         #button2{
+           left: 425px !important;
+           top: 3040px !important;
+           width: 260px !important;
+           height: 90px !important;
+           z-index: 1 !important;
+
+         }
+
+         #button3{
+           left: 425px !important;
+           top: 4290px !important;
+           width: 260px !important;
+           height: 90px !important;
+           z-index: 1 !important;
+
+      }
+         #button4{
+           left: 425px !important;
+           top: 5590px !important;
+           width: 260px !important;
+           height: 90px !important;
+           z-index: 1 !important;
+
+         }
+
+         p15{
+           left: 505px !important;
+           font-size: 40px !important;
+           top: 900px !important;
+           z-index: 1 !important;
+
+         }
+         p16{
+           left: 505px !important;
+           font-size: 40px !important;
+           top: 1970px !important;
+           z-index: 1 !important;
+
+         }
+         p17{
+           left: 505px !important;
+           font-size: 40px !important;
+           top: 3070px !important;
+           z-index: 1 !important;
+
+         }
+         p18{
+           left: 505px !important;
+           font-size: 40px !important;
+           top: 4320px !important;
+           z-index: 1 !important;
+
+         }
+         p19{
+           left: 505px !important;
+           font-size: 40px !important;
+           top: 5620px !important;
+           z-index: 1 !important;
+
+         }
+
+         h1{
+     width: 800px !important;
+     left: 170px !important;
+     top: 150px !important;
+     font-size: 39px;
+     line-height: 44px;
+     text-align: center !important;
+
+
+         }
+
+         h2{
+     width: 800px !important;
+     left: 170px !important;
+     top: 1010px !important;
+     font-size: 39px;
+     line-height: 46px;
+     text-align: center !important;
+
+         }
+
+         h3{
+     width: 800px !important;
+     left: 170px !important;
+     top: 2050px !important;
+     font-size: 40px;
+     line-height: 46px;
+     text-align: center !important;
+
+
+         }
+
+         h4{
+     width: 800px !important;
+     left: 170px !important;
+     top: 3140px !important;
+     font-size: 39px;
+     line-height: 46px;
+     text-align: center !important;
+
+         }
+
+         h5{
+     width: 800px !important;
+     left: 170px !important;
+     top: 4430px !important;
+     font-size: 39px;
+     line-height: 60px;
+     text-align: center !important;
+
+
+
+         }
+         p5{
+     width: 600px !important;
+     left: 300px !important;
+     top: 250px !important;
+     font-size: 30px !important;
+     line-height: 30px !important;
+     z-index: 1 !important;
+
+         }
+         p6{
+           width: 600px !important;
+           left: 300px !important;
+           top: 1110px !important;
+           font-size: 30px !important;
+           line-height: 30px !important;
+           z-index: 1 !important;
+
+         }
+         p7{
+           width: 600px !important;
+           z-index: 1 !important;
+
+           left: 300px !important;
+           top: 2150px !important;
+           font-size: 30px !important;
+           line-height: 30px !important;         }
+         p8{
+           width: 600px !important;
+           z-index: 1 !important;
+
+           left: 300px !important;
+           top: 3260px !important;
+           font-size: 30px !important;
+           line-height: 30px !important;
+         }
+         p9{
+           width: 600px !important;
+           left: 300px !important;
+           z-index: 1 !important;
+
+           top: 4560px !important;
+           font-size: 30px !important;
+           line-height: 30px !important;
+         }
+
+
+    }
+    @media only screen and (min-width: 321px){
+     .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
+    }
+
     .calendar2{
       position: absolute;
       width: 420px;
@@ -55,7 +415,9 @@
       left: 80px;
       top: 500px;
     }
-
+  .parfume{ position: absolute;
+    top: 10px;
+  }
     .book{
       position: absolute;
       width: 420px;
@@ -376,7 +738,7 @@
         #futer{
           position: relative;
           width: 100%;
-          top: 2100px;
+          top: 2450px;
           background: #FF003D;
           height: 1px;
         }
@@ -628,6 +990,18 @@ z-index: 10;
     </div>
 
 
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+    <ul class="menu__box">
+      <li><a class="menu__item" href="./main.html">Главная</a></li>
+      <li><a class="menu__item" href="./about.html">О нас</a></li>
+      <li><a class="menu__item" href="./calendar.html">Билеты</a></li>
+      <li><a class="menu__item" href="./places.html">Места</a></li>
+      <li><a class="menu__item" href="./store.html">Магазин</a></li>
+    </ul>
+  </div>
 
     <img class="logo" src="images/logo.png" alt="logo">
     <a href="./main.html" class="mainlink">Главная</a>
@@ -635,7 +1009,7 @@ z-index: 10;
     <a href="./calendar.html" class="calendarlink">Билеты</a>
     <a href="./places.html" class="placeslink">Места</a>
     <a href="./store.html" class="storelink">Магазин</a>
-     <img class="pafrume" src="images/parfume.png" alt="parfume">
+     <img class="parfume" src="images/parfume.png" alt="parfume">
     <img class="calendar2" src="images/calendar2.png" alt="calendar2">
     <img class="cassette" src="images/cassette.png" alt="cassette">
     <img class="book" src="images/book.png" alt="book">
