@@ -13,121 +13,13 @@
     <title>Улица страха</title>
   </head>
   <style>
-  @media only screen and (max-width: 320px) {
 
-    h1{
-    position: absolute;
-    left: 5px !important;
-    top: 60px !important;
-    font-size: 70px !important;
-    line-height: 70px !important;}
-  .compas{
-    width: 220px !important;
-    height: 220px !important;
-    left: 50px !important;
-    top: 290px !important;
-    }
-    .logo{
-      position: fixed;
-      left: 240px !important;
-      top: 20px !important;
-      height: 20px !important;
-      width: 54px !important;
-    }
-    .mainlink, .aboutlink, .storelink, .calendarlink .placeslink{ display: none;
-    }
-    #menu__toggle {
-      opacity: 0;
-    }
-
-    .menu__btn {
-      display: flex;
-      align-items: center;
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      width: 26px;
-      height: 26px;
-      cursor: pointer;
-      z-index: 100;
-
-    }
-
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #FF003D;
-
-    }
-    .menu__btn > span::before {
-      content: '';
-      top: -8px;
-
-    }
-    .menu__btn > span::after {
-      content: '';
-      top: 8px;
-
-    }
-
-    .menu__box {
-      display: block;
-      position: fixed;
-      visibility: hidden;
-      top: 0;
-      left: -100%;
-      width: 320px !important;
-      height: 100% !important;
-      margin: 0 !important;
-      padding: 80px 0 !important;
-      list-style: none !important;
-      text-align: center !important;
-      background-color: black !important;
-      box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-      z-index: 10;
-    }
-    /* элементы меню */
-    .menu__item {
-      display: block !important;
-      padding: 12px 24px !important;
-      color: #FF003D !important;
-      font-family: Lovelace !important;
-      font-size: 20px !important;
-      font-weight: 600 !important;
-      text-decoration: none !important;
-      background-color: black !important;
-
-    }
-
-    #menu__toggle:checked ~ .menu__btn > span {
-      transform: rotate(45deg);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::before {
-      top: 0;
-      transform: rotate(0);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::after {
-      top: 0;
-      transform: rotate(90deg);
-    }
-    #menu__toggle:checked ~ .menu__box {
-      visibility: visible;
-      left: 0;
-    }
-  }
- @media only screen and (min-width: 321px){
-  .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
-}
 
 /* @media only screen and (max-width: 768px){
 .compas{
   position: absolute;
-  top: 420px !important;
-  left: 140px !important;
+  top: 420px  ;
+  left: 140px  ;
 }
 } */
   h1{
@@ -270,8 +162,225 @@
 
 
 
+     @media only screen and (max-width: 320px) {
 
+       h1{
+       position: absolute;
+       left: 5px  ;
+       top: 60px  ;
+       font-size: 70px  ;
+       line-height: 70px  ;}
+     .compas{
+       width: 220px  ;
+       height: 220px  ;
+       left: 50px  ;
+       top: 290px  ;
+       }
+       .logo{
+         position: fixed;
+         left: 240px  ;
+         top: 20px  ;
+         height: 20px  ;
+         width: 54px  ;
+       }
+       .mainlink, .aboutlink, .storelink, .calendarlink .placeslink{ display: none;
+       }
+       #menu__toggle {
+         opacity: 0;
+       }
 
+       .menu__btn {
+         display: flex;
+         align-items: center;
+         position: fixed;
+         top: 20px;
+         left: 20px;
+         width: 26px;
+         height: 26px;
+         cursor: pointer;
+         z-index: 100;
+
+       }
+
+       .menu__btn > span,
+       .menu__btn > span::before,
+       .menu__btn > span::after {
+         display: block;
+         position: absolute;
+         width: 100%;
+         height: 2px;
+         background-color: #FF003D;
+
+       }
+       .menu__btn > span::before {
+         content: '';
+         top: -8px;
+
+       }
+       .menu__btn > span::after {
+         content: '';
+         top: 8px;
+
+       }
+
+       .menu__box {
+         display: block;
+         position: fixed;
+         visibility: hidden;
+         top: 0;
+         left: -100%;
+         width: 320px  ;
+         height: 100%  ;
+         margin: 0  ;
+         padding: 80px 0  ;
+         list-style: none  ;
+         text-align: center  ;
+         background-color: black  ;
+         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+         z-index: 10;
+       }
+       /* элементы меню */
+       .menu__item {
+         display: block  ;
+         padding: 12px 24px  ;
+         color: #FF003D  ;
+         font-family: Lovelace  ;
+         font-size: 20px  ;
+         font-weight: 600  ;
+         text-decoration: none  ;
+         background-color: black  ;
+
+       }
+
+       #menu__toggle:checked ~ .menu__btn > span {
+         transform: rotate(45deg);
+       }
+       #menu__toggle:checked ~ .menu__btn > span::before {
+         top: 0;
+         transform: rotate(0);
+       }
+       #menu__toggle:checked ~ .menu__btn > span::after {
+         top: 0;
+         transform: rotate(90deg);
+       }
+       #menu__toggle:checked ~ .menu__box {
+         visibility: visible;
+         left: 0;
+       }
+     }
+    @media only screen and (min-width: 769px){
+     .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
+   }
+
+   @media only screen and (min-width: 321px) and (max-width: 768px){
+
+     .compas{
+       top: 500px;
+       left: 170px;
+       width: 450px;
+       height: 450px;
+     }
+     h1{
+       line-height: 140px;
+       left: 70px;
+       top: 60px;
+       font-size: 145px;
+
+     }
+     .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+     }
+     .logo{
+       position: fixed;
+       left: 600px  ;
+       top: 35px  ;
+       height: 48px  ;
+       width: 130px  ;
+     }
+     .mainlink, .aboutlink, .storelink, .calendarlink .placeslink{ display: none;
+     }
+     #menu__toggle {
+       opacity: 0;
+     }
+
+     .menu__btn {
+       display: flex;
+       align-items: center;
+       position: fixed;
+       top: 40px;
+       left: 40px;
+       width: 60px;
+       height: 66px;
+       cursor: pointer;
+       z-index: 100;
+
+     }
+
+     .menu__btn > span,
+     .menu__btn > span::before,
+     .menu__btn > span::after {
+       display: block;
+       position: absolute;
+       width: 100%;
+       height: 4px;
+       background-color: #FF003D;
+
+     }
+     .menu__btn > span::before {
+       content: '';
+       top: -20px;
+
+     }
+     .menu__btn > span::after {
+       content: '';
+       top: 20px;
+
+     }
+
+     .menu__box {
+       display: block;
+       position: fixed;
+       visibility: hidden;
+       top: 0;
+       left: -100%;
+       width: 768px  ;
+       height: 100%  ;
+       margin: 0  ;
+       padding: 100px 0  ;
+       list-style: none  ;
+       text-align: center  ;
+       background-color: black  ;
+       box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+       z-index: 10;
+     }
+     /* элементы меню */
+     .menu__item {
+       display: block  ;
+       padding: 22px 24px  ;
+       color: #FF003D  ;
+       font-family: Lovelace  ;
+       font-size: 40px  ;
+       font-weight: 600  ;
+       text-decoration: none  ;
+       background-color: black  ;
+
+     }
+
+     #menu__toggle:checked ~ .menu__btn > span {
+       transform: rotate(45deg);
+     }
+     #menu__toggle:checked ~ .menu__btn > span::before {
+       top: 0;
+       transform: rotate(0);
+     }
+     #menu__toggle:checked ~ .menu__btn > span::after {
+       top: 0;
+       transform: rotate(90deg);
+     }
+     #menu__toggle:checked ~ .menu__box {
+       visibility: visible;
+       left: 0;
+   }
+}
 
 
   </style>

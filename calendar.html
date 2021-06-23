@@ -6,230 +6,7 @@
     <meta name="viewport" content="width=device-width">
 
     <style>
-    @media only screen and (max-width: 320px) {
 
-      .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
-      }
-
-      .logo2{
-        position: fixed;
-        left: 900px !important;
-        top: 70px !important;
-        height: 81px !important;
-        width: 220px !important;
-      }
-      #menu__toggle {
-        opacity: 0;
-      }
-
-      .menu__btn {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        top: 80px;
-        left: 80px;
-        width: 120px;
-        height: 100px;
-        cursor: pointer;
-        z-index: 100;
-
-      }
-
-      .menu__btn > span,
-      .menu__btn > span::before,
-      .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 10px;
-        background-color: white;
-         : 11;
-      }
-      .menu__btn > span::before {
-        content: '';
-        top: -40px;
-         : 11;
-      }
-      .menu__btn > span::after {
-        content: '';
-        top: 40px;
-         : 11;
-      }
-
-      .menu__box {
-        display: block;
-        position: fixed;
-        visibility: hidden;
-        top: 0;
-        left: -100%;
-        width: 1220px;
-        height: 100%;
-        margin: 0;
-        padding: 80px 0;
-        list-style: none;
-        text-align: center;
-        background-color: #CC0031;
-      z-index: 10;}
-      /*  : 10;} */
-      /* элементы меню */
-      .menu__item {
-        display: block;
-        padding: 42px 94px;
-        color: white;
-        font-family: Lovelace;
-        font-size: 80px;
-        font-weight: 400;
-        text-decoration: none;
-        background-color: #CC0031;
-      }
-
-      #menu__toggle:checked ~ .menu__btn > span {
-        transform: rotate(45deg);  : 11;
-      }
-      #menu__toggle:checked ~ .menu__btn > span::before {
-        top: 0;
-        transform: rotate(0);  : 11;
-      }
-      #menu__toggle:checked ~ .menu__btn > span::after {
-        top: 0;
-        transform: rotate(90deg);  : 11;
-      }
-      #menu__toggle:checked ~ .menu__box {
-        visibility: visible;
-        left: 0;
-      }
-
-      #calendar {
-        position: relative;
-        width: 95% !important;
-        color: white !important;
-        line-height: 1.2em;
-        font-size: 25px !important;
-        text-align: center;
-        border-spacing:0px;
-        top: 10px !important;
-        left: 80px !important;
-      }
-      #calendar tr.dn td {
-        position: relative;
-        font-size: 15px;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px !important;
-        line-height: 145px !important;
-        top: 1020px;
-        left: -80px !important;
-
-
-      }
-      #calendar thead tr:last-child {
-        position: relative;
-        font-size: small;
-        color: #FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px !important;
-        line-height: 145px !important;
-        top: 50px; left: 90px !important;
-
-      }
-      #calendar thead tr:nth-child(1) td:nth-child(2) {
-        position: relative;
-        color: #FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 70px !important;
-        line-height: 124px !important;
-      }
-      #calendar thead tr:nth-child(1) td:nth-child(1):hover,
-      #calendar thead tr:nth-child(1) td:nth-child(3):hover {
-        cursor: pointer;
-      }
-      #calendar tbody td {
-        position: relative;
-        color: #FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px !important;
-        line-height: 145px !important;
-      }
-      #calendar tbody td:nth-child(n+6),
-      #calendar .holiday {
-
-        color: FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px !important;
-        line-height: 145px !important;
-      }
-      .btn {
-      position: relative;
-      color: white;
-      padding: 60px 173px !important;
-      width: 190px;
-      height: 120px !important;
-      line-height: 35px;
-      /* top: 50px; */
-      text-decoration: none;
-      left: 360px !important;
-      top: 1190px!important;
-      cursor: pointer;
-      border: 2px solid white !important;
-      border-radius: 1px;
-      background-color: #CC0031;
-      font-family: FuturaLightC;
-      font-size: 58px !important;
-    }
-    form{
-      position: absolute;
-      padding-top: 180px !important;
-
-    }
-    input[type="text"] {
-      position: relative;
-      display:block;
-      width: 340px;
-      margin: 75px !important;
-      left: 50px !important;
-
-      height: 60px !important;
-      padding: 0 310px !important;
-      font-size: 40px !important;
-      text-align: center;
-      color: white;
-      font-family: FuturaLightC;
-      border-radius: 10px !important;
-      background-color: #CC0031;
-      border: none;
-      border-bottom: 3px solid white !important;
-    }
-    input[type="email"] {
-      position: relative;
-      display:block;
-      width: 340px;
-      margin: 75px !important;
-      left: 50px !important;
-
-      height: 60px !important;
-      padding: 0 310px !important;
-      font-size: 40px !important;
-      text-align: center;
-      color: white;
-      font-family: FuturaLightC;
-      border-radius: 10px !important;
-      background-color: #CC0031;
-      border: none;
-      border-bottom: 3px solid white !important;
-    }
-    }
-    @media only screen and (min-width: 321px){
-     .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
-    }
     .mainlink{
       position: fixed;
       color: white;
@@ -333,7 +110,6 @@
       .look-calendar {
         position: relative;
         width:1080px;
-        /* padding:6px; */
         top: 10px; left: -20px;
 
       }
@@ -444,61 +220,11 @@
   font-family: FuturaLightC;
 }
 
-       /* button {
-        position: relative;
-        font-size: 17px;
-        line-height: 1.47059;
-        font-weight: 400;
-        left: 680px;
-        top: 280px;
-        letter-spacing: -.022em;
-        font-family: FuturaLightC;
-        background-color: #CC0031;
-        background: linear-gradient(#CC0031,#CC0031);
-        border: 1px solid white;
-        border-radius: 1px;
-        color: white;
-        cursor: pointer;
-        display: block;
-        min-width: 30px;
-        padding: 5px 20px;
-        text-align: center;
-        white-space: nowrap;
-        margin: 5px 50px;
-      } */
-
-      /* button{
-        position: relative;
-        top: 500px;
-        left: 700px;
-        border: 1px white;
-        font-family: FuturaLightC;
-        background-color: #CC0031;
-        color: white;
-        cursor: pointer;
-        white-space: nowrap;
-
-
-      } */
-
       form{
         position: relative;
         padding-top: 50px;
 
       }
-
-
-
-
-      /* #calendar tbody td.today {
-        background: #CC0031;
-        color: #CC0031;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 22px;
-        line-height: 53px;
-      } */
 
         .btn {
         position: relative;
@@ -507,7 +233,6 @@
         width: 190px;
         height: 120;
         line-height: 35px;
-        /* top: 50px; */
         text-decoration: none;
         left: 920px;
         cursor: pointer;
@@ -517,10 +242,453 @@
         font-family: FuturaLightC;
         font-size: 18px;
       }
+      @media only screen and (max-width: 320px) {
 
-      /* The popup form - hidden by default */
+        .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+        }
+
+        .logo2{
+          position: fixed;
+          left: 880px  ;
+          top: 70px  ;
+          height: 81px  ;
+          width: 220px  ;
+        }
+        #menu__toggle {
+          opacity: 0;
+        }
+
+        .menu__btn {
+          display: flex;
+          align-items: center;
+          position: fixed;
+          top: 80px;
+          left: 80px;
+          width: 120px;
+          height: 100px;
+          cursor: pointer;
+          z-index: 100;
+
+        }
+
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 10px;
+          background-color: white;
+           : 11;
+        }
+        .menu__btn > span::before {
+          content: '';
+          top: -40px;
+           : 11;
+        }
+        .menu__btn > span::after {
+          content: '';
+          top: 40px;
+           : 11;
+        }
+
+        .menu__box {
+          display: block;
+          position: fixed;
+          visibility: hidden;
+          top: 0;
+          left: -100%;
+          width: 1220px;
+          height: 100%;
+          margin: 0;
+          padding: 80px 0;
+          list-style: none;
+          text-align: center;
+          background-color: #CC0031;
+        z-index: 10;}
+        /*  : 10;} */
+        /* элементы меню */
+        .menu__item {
+          display: block;
+          padding: 42px 94px;
+          color: white;
+          font-family: Lovelace;
+          font-size: 80px;
+          font-weight: 400;
+          text-decoration: none;
+          background-color: #CC0031;
+        }
+
+        #menu__toggle:checked ~ .menu__btn > span {
+          transform: rotate(45deg);  : 11;
+        }
+        #menu__toggle:checked ~ .menu__btn > span::before {
+          top: 0;
+          transform: rotate(0);  : 11;
+        }
+        #menu__toggle:checked ~ .menu__btn > span::after {
+          top: 0;
+          transform: rotate(90deg);  : 11;
+        }
+        #menu__toggle:checked ~ .menu__box {
+          visibility: visible;
+          left: 0;
+        }
+
+        #calendar {
+          position: relative;
+          width: 95%  ;
+          color: white  ;
+          line-height: 1.2em;
+          font-size: 25px  ;
+          text-align: center;
+          border-spacing:0px;
+          top: 680px  ;
+          left: 80px  ;
+        }
+        #calendar tr.dn td {
+          position: relative;
+          font-size: 15px;
+          font-family: Lovelace;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 60px  ;
+          line-height: 145px  ;
+          top: 800px;
+          left: -80px  ;
 
 
+        }
+        #calendar thead tr:last-child {
+          position: relative;
+          font-size: small;
+          color: #FFFFFF;
+          font-family: Lovelace;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 60px  ;
+          line-height: 145px  ;
+          top: -810px; left: 90px  ;
+
+        }
+        #calendar thead tr:nth-child(1) td:nth-child(2) {
+          position: relative;
+          color: #FFFFFF;
+          font-family: Lovelace;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 70px  ;
+          line-height: 124px  ;
+        }
+        #calendar thead tr:nth-child(1) td:nth-child(1):hover,
+        #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+          cursor: pointer;
+        }
+        #calendar tbody td {
+          position: relative;
+          color: #FFFFFF;
+          font-family: Lovelace;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 60px  ;
+          line-height: 145px  ;
+        }
+        #calendar tbody td:nth-child(n+6),
+        #calendar .holiday {
+
+          color: FFFFFF;
+          font-family: Lovelace;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 60px  ;
+          line-height: 145px  ;
+        }
+        .btn {
+        position: relative;
+        color: white;
+        padding: 60px 173px  ;
+        width: 190px;
+        height: 120px  ;
+        line-height: 35px;
+        /* top: 50px; */
+        text-decoration: none;
+        left: 360px  ;
+        top: 1990px ;
+        cursor: pointer;
+        border: 2px solid white  ;
+        border-radius: 1px;
+        background-color: #CC0031;
+        font-family: FuturaLightC;
+        font-size: 58px  ;
+      }
+      form{
+        position: absolute;
+        padding-top: 180px  ;
+
+      }
+      input[type="text"] {
+        position: relative;
+        display:block;
+        width: 340px;
+        margin: 75px  ;
+        left: 50px  ;
+
+        height: 60px  ;
+        padding: 0 310px  ;
+        font-size: 40px  ;
+        text-align: center;
+        color: white;
+        font-family: FuturaLightC;
+        border-radius: 10px  ;
+        background-color: #CC0031;
+        border: none;
+        border-bottom: 3px solid white  ;
+      }
+      input[type="email"] {
+        position: relative;
+        display:block;
+        width: 340px;
+        margin: 75px  ;
+        left: 50px  ;
+
+        height: 60px  ;
+        padding: 0 310px  ;
+        font-size: 40px  ;
+        text-align: center;
+        color: white;
+        font-family: FuturaLightC;
+        border-radius: 10px  ;
+        background-color: #CC0031;
+        border: none;
+        border-bottom: 3px solid white  ;
+      }
+      }
+      @media only screen and (min-width: 769px){
+       .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
+      }
+
+      @media only screen and (min-width: 321px) and (max-width: 768px){
+        .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+        }
+        .logo2{
+          position: fixed;
+          left: 930px  ;
+          top: 35px  ;
+          height: 70px  ;
+          width: 180px  ;
+        }
+        .mainlink, .aboutlink, .storelink, .calendarlink .placeslink{ display: none;
+        }
+        #menu__toggle {
+          opacity: 0;
+        }
+
+        .menu__btn {
+          display: flex;
+          align-items: center;
+          position: fixed;
+          top: 40px;
+          left: 40px;
+          width: 60px;
+          height: 66px;
+          cursor: pointer;
+          z-index: 100;
+
+        }
+
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          background-color: white;
+
+        }
+        .menu__btn > span::before {
+          content: '';
+          top: -20px;
+
+        }
+        .menu__btn > span::after {
+          content: '';
+          top: 20px;
+
+        }
+
+        .menu__box {
+          display: block;
+          position: fixed;
+          visibility: hidden;
+          top: 0;
+          left: -100%;
+          width: 1178px  ;
+          height: 100%  ;
+          margin: 0  ;
+          padding: 100px 0  ;
+          list-style: none  ;
+          text-align: center  ;
+          background-color: #CC0031  ;
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+          z-index: 10;
+        }
+        /* элементы меню */
+        .menu__item {
+          display: block  ;
+          padding: 42px 24px  ;
+          color: white ;
+          font-family: Lovelace  ;
+          font-size: 60px  ;
+          font-weight: 600  ;
+          text-decoration: none  ;
+          background-color:#CC0031  ;
+
+        }
+
+        #menu__toggle:checked ~ .menu__btn > span {
+          transform: rotate(45deg);
+        }
+        #menu__toggle:checked ~ .menu__btn > span::before {
+          top: 0;
+          transform: rotate(0);
+        }
+        #menu__toggle:checked ~ .menu__btn > span::after {
+          top: 0;
+          transform: rotate(90deg);
+        }
+        #menu__toggle:checked ~ .menu__box {
+          visibility: visible;
+          left: 0;
+      }
+      #calendar {
+        position: relative;
+        width: 95%  ;
+        color: white  ;
+        line-height: 1.2em;
+        font-size: 25px  ;
+        text-align: center;
+        border-spacing:0px;
+        top: 680px  ;
+        left: 80px  ;
+      }
+      #calendar tr.dn td {
+        position: relative;
+        font-size: 15px;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px  ;
+        line-height: 145px  ;
+        top: 800px;
+        left: -80px  ;
+
+
+      }
+      #calendar thead tr:last-child {
+        position: relative;
+        font-size: small;
+        color: #FFFFFF;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px  ;
+        line-height: 145px  ;
+        top: -810px; left: 90px  ;
+
+      }
+      #calendar thead tr:nth-child(1) td:nth-child(2) {
+        position: relative;
+        color: #FFFFFF;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 70px  ;
+        line-height: 124px  ;
+      }
+      #calendar thead tr:nth-child(1) td:nth-child(1):hover,
+      #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+        cursor: pointer;
+      }
+      #calendar tbody td {
+        position: relative;
+        color: #FFFFFF;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px  ;
+        line-height: 145px  ;
+      }
+      #calendar tbody td:nth-child(n+6),
+      #calendar .holiday {
+
+        color: FFFFFF;
+        font-family: Lovelace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px  ;
+        line-height: 145px  ;
+      }
+      .btn {
+      position: relative;
+      color: white;
+      padding: 60px 173px  ;
+      width: 190px;
+      height: 120px  ;
+      line-height: 35px;
+      /* top: 50px; */
+      text-decoration: none;
+      left: 360px  ;
+      top: 1990px ;
+      cursor: pointer;
+      border: 2px solid white  ;
+      border-radius: 1px;
+      background-color: #CC0031;
+      font-family: FuturaLightC;
+      font-size: 58px  ;
+    }
+    form{
+      position: absolute;
+      padding-top: 100px  ;
+
+    }
+    input[type="text"] {
+      position: relative;
+      display:block;
+      width: 340px;
+      margin: 75px  ;
+      left: 50px  ;
+
+      height: 60px  ;
+      padding: 0 310px  ;
+      font-size: 40px  ;
+      text-align: center;
+      color: white;
+      font-family: FuturaLightC;
+      border-radius: 10px  ;
+      background-color: #CC0031;
+      border: none;
+      border-bottom: 3px solid white  ;
+    }
+    input[type="email"] {
+      position: relative;
+      display:block;
+      width: 340px;
+      margin: 75px  ;
+      left: 50px  ;
+
+      height: 60px  ;
+      padding: 0 310px  ;
+      font-size: 40px  ;
+      text-align: center;
+      color: white;
+      font-family: FuturaLightC;
+      border-radius: 10px  ;
+      background-color: #CC0031;
+      border: none;
+      border-bottom: 3px solid white  ;
+    }
+   }
 
     </style>
     <div class="hamburger-menu">
@@ -546,11 +714,6 @@
     </div>
 </form>
 
-
-
-      <!-- <button type="submit" class="button" name="button">Купить</button> -->
-
-    <!-- <button type="button" href="./store.html" class="btn"name="button">Купить</button> -->
     <a type="button" href="./ticket.html" class="btn"name="button">Купить</a>
 
      <p1><a href="./main.html" class="mainlink">Главная</a></p1>
@@ -605,16 +768,13 @@
     document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
     document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
     if (document.querySelectorAll('#' + id + ' tbody tr').length < 6) {
-        // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
     document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td> <td> <td> <td> <td> <td> <td> ';
     }
   }
   calendar("calendar", new Date().getFullYear(), new Date().getMonth());
-        // переключатель минус месяц
   document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
     calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) - 1);
   }
-        // переключатель плюс месяц
   document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
     calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
   }
