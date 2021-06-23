@@ -2,695 +2,659 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Билеты</title>
+    <title>Лабиринт</title>
     <meta name="viewport" content="width=device-width">
 
-    <style>
-
-    .mainlink{
-      position: fixed;
-      color: white;
-      width: 87px;
-      font-family: FuturaLightC;
-      /* margin: 30%; */
-      font-size: 32px;
-      text-decoration: none;
-       left: 280px;
-
-      top: 38px;
-      z-index: 101;
-
-    }
-
-    .mainlink:hover{
-       color: black;
-    }
-
-    .aboutlink{
-      position: fixed;
-      color: white;
-      width: 87px;
-      font-family: FuturaLightC;
-      /* margin: 30%; */
-      font-size: 32px;
-      text-decoration: none;
-       left: 480px;
-      top: 38px;
-      z-index: 101;
-    }
-
-    .aboutlink:hover{
-       color: black;
-    }
-
-    .calendarlink{
-      position: fixed;
-      color: white;
-      width: 87px;
-      font-family: FuturaLightC;
-      /* margin: 30%; */
-      font-size: 32px;
-      text-decoration: none;
-      left: 680px;
-      top: 38px;
-      z-index: 101;
+    <style media="screen">
 
 
 
-    }
 
-    .calendarlink:hover{
-       color: black;
-    }
-
-    .placeslink{
-      position: fixed;
-      color: white;
-      width: 87px;
-      font-family: FuturaLightC;
-      /* margin: 30%; */
-      font-size: 32px;
-      text-decoration: none;
-      left: 880px;
-      top: 38px;
-      z-index: 101;
-
-
-    }
-
-    .placeslink:hover{
-       color: black;
-    }
-
-    .storelink{
-      position: fixed;
-      color: white;
-      width: 87px;
-      font-family: FuturaLightC;
-      /* margin: 30%; */
-      font-size: 32px;
-      text-decoration: none;
-      left: 1080px;
-      top: 38px;
-      z-index: 101;
-
-    }
-
-    .storelink:hover{
-       color: black;
-    }
-                    .logo2{
-                      position: fixed;
-                      left: 80px;
-                      top: 30px;
-                      height: 43px;
-                      width: 117px;
-                    }
-
-      .look-calendar {
-        position: relative;
-        width:1080px;
-        top: 10px; left: -20px;
-
-      }
-      #calendar {
-        position: relative;
-        width: 45%;
-        line-height: 1.2em;
-        font-size: 15px;
-        text-align: center;
-        border-spacing:0px;
-        top: -320px; left: 80px;
-      }
-      #calendar tr.dn td {
-        position: relative;
-        font-size: 15px;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 22px;
-        line-height: 53px;
-        top: -120px; left: -80px;
-
-
-      }
-      #calendar thead tr:last-child {
-        position: relative;
-        font-size: small;
-        color: #FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 22px;
-        line-height: 53px;
-        top: 120px; left: 80px;
-
-      }
-      #calendar thead tr:nth-child(1) td:nth-child(2) {
-        position: relative;
-        color: #FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 53px;
-      }
-      #calendar thead tr:nth-child(1) td:nth-child(1):hover,
-      #calendar thead tr:nth-child(1) td:nth-child(3):hover {
-        cursor: pointer;
-      }
-      #calendar tbody td {
-        position: relative;
-        color: #FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 22px;
-        line-height: 53px;
-      }
-      #calendar tbody td:nth-child(n+6),
-      #calendar .holiday {
-
-        color: FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 22px;
-        line-height: 53px;
+      .logo{
+        position: fixed;
+        left: 80px;
+        top: 30px;
+        height: 43px;
+        width: 117px;
+        z-index: 101;
       }
 
-      input[type="text"] {
-        position: relative;
-        display:block;
-        width: 340px;
-        margin: 35px;
-        left: 750px;
-
-        height: 37px;
-        padding: 0 18px;
-        font-size: 15px;
-        text-align: center;
+      .mainlink{
+        position: fixed;
         color: white;
+        width: 87px;
         font-family: FuturaLightC;
-        border-radius: 4px;
-        background-color: #CC0031;
-        border: none;
-        border-bottom: 1px solid white;
-      }
-      input[type="email"] {
-        position: relative;
-        display:block;
-        width: 340px;
-        margin: 35px;
-        left: 750px;
+        /* margin: 30%; */
+        font-size: 32px;
+        text-decoration: none;
+         left: 280px;
 
-        height: 37px;
-        padding: 0 18px;
-        font-size: 15px;
-        text-align: center;
-        color: white;
-        font-family: FuturaLightC;
-        border-radius: 4px;
-        background-color: #CC0031;
-        border: none;
-        border-bottom: 1px solid white;
+        top: 38px;
+        z-index: 101;
+
       }
-      input::placeholder {
-  color: white;
-  font-family: FuturaLightC;
+
+      .mainlink:hover{
+        color: #FF003D;
+      }
+
+      .aboutlink{
+        position: fixed;
+        color: white;
+        width: 87px;
+        font-family: FuturaLightC;
+        /* margin: 30%; */
+        font-size: 32px;
+        text-decoration: none;
+         left: 480px;
+        top: 38px;
+        z-index: 101;
+      }
+
+      .aboutlink:hover{
+        color: #FF003D;
+      }
+
+      .calendarlink{
+        position: fixed;
+        color: white;
+        width: 87px;
+        font-family: FuturaLightC;
+        /* margin: 30%; */
+        font-size: 32px;
+        text-decoration: none;
+        left: 680px;
+        top: 38px;
+        z-index: 101;
+
+
+
+      }
+
+      .calendarlink:hover{
+        color: #FF003D;
+      }
+
+      .placeslink{
+        position: fixed;
+        color: white;
+        width: 87px;
+        font-family: FuturaLightC;
+        /* margin: 30%; */
+        font-size: 32px;
+        text-decoration: none;
+        left: 880px;
+        top: 38px;
+        z-index: 101;
+
+
+      }
+
+      .placeslink:hover{
+        color: #FF003D;
+      }
+
+      .storelink{
+        position: fixed;
+        color: white;
+        width: 87px;
+        font-family: FuturaLightC;
+        /* margin: 30%; */
+        font-size: 32px;
+        text-decoration: none;
+        left: 1080px;
+        top: 38px;
+        z-index: 101;
+
+      }
+
+      .storelink:hover{
+        color: #FF003D;
+      }
+      #menu{
+  position: fixed;
+  top: 0%;
+  width:100%;
+  height:80px;
+  background:black;
+  z-index: 100;
+  }
+
+  #futer{
+    position: relative;
+    width: 100%;
+    top: 1785px;
+    background: #FF003D;
+    height: 1px;
+  }
+  #boom{
+  position: relative;
+  width: 100%;
+  top: 1930px;
+  background: black;
+  height: 1px;
+
+  }
+
+  .labirint{
+  position: absolute;
+  width: 1118px;
+  height: 675px;
+  left: 80px;
+  top: 350px;
+  }
+  .labirint2{
+  position: absolute;
+  width: 1128px;
+  height: 670px;
+  left: 80px;
+  top: 1050px;
+
+  }
+
+  h1{
+    position: absolute;
+    width: 572px;
+    height: 69px;
+    left: 370px;
+    top: 90px;
+
+    font-family: Lovelace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+
+    color: #FF003D;
+
+  }
+
+  p1{
+    position: absolute;
+    width: 940px;
+    height: 156px;
+    left: 80px;
+    top: 230px;
+
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+  }
+
+        p8{
+          position: absolute;
+          width: 199px;
+          height: 30px;
+          left: 80px;
+          top: 1820px;
+
+          font-family: Lovelace;
+          font-style: light;
+          font-weight: light;
+          font-size: 30px;
+          line-height: 56px;
+
+          color: #FFFFFF;}
+
+          p11{
+            position: absolute;
+            width: 199px;
+            height: 30px;
+            right: 330px;
+            top: 1820px;
+
+            font-family: Lovelace;
+            font-style: light;
+            font-weight: light;
+            font-size: 30px;
+            line-height: 56px;
+
+            color: #FFFFFF;}
+
+        p9{
+          position: absolute;
+          width: 285px;
+          height: 48px;
+          left: 290px;
+          top: 1830px;
+
+          font-family: FuturaLightC;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 38px;
+
+          color: #FFFFFF;
+          }
+
+          p10{
+            position: absolute;
+            width: 285px;
+            height: 48px;
+            left: 290px;
+            top: 1870px;
+
+            font-family: FuturaLightC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 38px;
+
+            color: #FFFFFF;
+            }
+          p12{
+            position: absolute;
+            width: 285px;
+            height: 48px;
+            right: 80px;
+            top: 1820px;
+
+            font-family: FuturaLightC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 38px;
+
+            color: #FFFFFF;
+            }
+            @media only screen and (max-width: 320px) {
+
+              .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+              }
+              .logo{
+                position: fixed;
+                left: 940px  ;
+                top: 60px  ;
+                height: 81px  ;
+                width: 220px  ;
+              }
+              #menu__toggle {
+                opacity: 0;
+              }
+
+              .menu__btn {
+                display: flex;
+                align-items: center;
+                position: fixed;
+                top: 80px;
+                left: 80px;
+                width: 120px;
+                height: 100px;
+                cursor: pointer;
+                z-index: 100;
+
+              }
+
+              .menu__btn > span,
+              .menu__btn > span::before,
+              .menu__btn > span::after {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 10px;
+                background-color: #FF003D;
+
+              }
+              .menu__btn > span::before {
+                content: '';
+                top: -40px;
+
+              }
+              .menu__btn > span::after {
+                content: '';
+                top: 40px;
+
+              }
+
+              .menu__box {
+                display: block;
+                position: fixed;
+                visibility: hidden;
+                top: 0;
+                left: -100%;
+                width: 1220px ;
+                height: 100% ;
+                margin: 0;
+                padding: 80px 0 ;
+                list-style: none ;
+                text-align: center ;
+                background-color: black;
+                box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+                z-index: 10;
+              }
+              /* элементы меню */
+              .menu__item {
+                display: block;
+                padding: 42px 94px;
+                color: #FF003D;
+                font-family: Lovelace;
+                font-size: 80px;
+                font-weight: 600;
+                text-decoration: none;
+                background-color: black;
+                top: 30px;
+              }
+
+              #menu__toggle:checked ~ .menu__btn > span {
+                transform: rotate(45deg);
+              }
+              #menu__toggle:checked ~ .menu__btn > span::before {
+                top: 0;
+                transform: rotate(0);
+              }
+              #menu__toggle:checked ~ .menu__btn > span::after {
+                top: 0;
+                transform: rotate(90deg);
+              }
+              #menu__toggle:checked ~ .menu__box {
+                visibility: visible;
+                left: 0;
+              }
+              #futer{
+                width: 1200px  ;
+                /* left: 100px  ; */
+                top: 1900px  ;
+                background: black;
+                height: 2px  ;
+              }
+            p8{
+            position: absolute;
+            width: 199px;
+            height: 30px;
+            left: 80px;
+            top: 1960px  ;
+
+            font-family: Lovelace;
+            font-style: light;
+            font-weight: light;
+            font-size: 35px  ;
+            line-height: 56px;
+
+            color: white;
 }
 
-      form{
-        position: relative;
-        padding-top: 50px;
+            p11{
+            position: absolute;
+            width: 199px;
+            height: 30px;
+            left: 630px  ;
+            top: 1960px  ;
+            font-family: Lovelace;
+            font-style: light;
+            font-weight: light;
+            font-size: 35px  ;
+            line-height: 56px;
 
-      }
+            color: white;
+}
 
-        .btn {
-        position: relative;
-        color: white;
-        padding: 12px 34px;
-        width: 190px;
-        height: 120;
-        line-height: 35px;
-        text-decoration: none;
-        left: 920px;
-        cursor: pointer;
-        border: 1px solid white;
-        border-radius: 1px;
-        background-color: #CC0031;
-        font-family: FuturaLightC;
-        font-size: 18px;
-      }
-      @media only screen and (max-width: 320px) {
+            p9{
+            position: absolute;
+            width: 285px;
+            height: 48px;
+            left: 290px;
+            top: 1970px  ;
+            font-family: FuturaLightC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px  ;
+            line-height: 38px;
 
-        .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
-        }
+            color: white;
+            }
 
-        .logo2{
-          position: fixed;
-          left: 880px  ;
-          top: 70px  ;
-          height: 81px  ;
-          width: 220px  ;
-        }
-        #menu__toggle {
-          opacity: 0;
-        }
+            p10{
+            position: absolute;
+            width: 285px;
+            height: 48px;
+            left: 290px;
+            top: 2030px  ;
 
-        .menu__btn {
-          display: flex;
-          align-items: center;
-          position: fixed;
-          top: 80px;
-          left: 80px;
-          width: 120px;
-          height: 100px;
-          cursor: pointer;
-          z-index: 100;
+            font-family: FuturaLightC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px  ;
+            line-height: 38px;
 
-        }
+            color: white;
+            }
 
-        .menu__btn > span,
-        .menu__btn > span::before,
-        .menu__btn > span::after {
-          display: block;
-          position: absolute;
-          width: 100%;
-          height: 10px;
-          background-color: white;
-           : 11;
-        }
-        .menu__btn > span::before {
-          content: '';
-          top: -40px;
-           : 11;
-        }
-        .menu__btn > span::after {
-          content: '';
-          top: 40px;
-           : 11;
-        }
+            p12{
+            position: absolute;
+            width: 285px;
+            height: 48px;
+            left: 810px  ;
+            top: 1960px  ;
 
-        .menu__box {
-          display: block;
-          position: fixed;
-          visibility: hidden;
-          top: 0;
-          left: -100%;
-          width: 1220px;
-          height: 100%;
-          margin: 0;
-          padding: 80px 0;
-          list-style: none;
-          text-align: center;
-          background-color: #CC0031;
-        z-index: 10;}
-        /*  : 10;} */
-        /* элементы меню */
-        .menu__item {
-          display: block;
-          padding: 42px 94px;
-          color: white;
-          font-family: Lovelace;
-          font-size: 80px;
-          font-weight: 400;
-          text-decoration: none;
-          background-color: #CC0031;
-        }
+            font-family: FuturaLightC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px  ;
+            line-height: 38px;
 
-        #menu__toggle:checked ~ .menu__btn > span {
-          transform: rotate(45deg);  : 11;
-        }
-        #menu__toggle:checked ~ .menu__btn > span::before {
-          top: 0;
-          transform: rotate(0);  : 11;
-        }
-        #menu__toggle:checked ~ .menu__btn > span::after {
-          top: 0;
-          transform: rotate(90deg);  : 11;
-        }
-        #menu__toggle:checked ~ .menu__box {
-          visibility: visible;
-          left: 0;
-        }
+            color: white;
+            }
+            .labirint{
+            position: absolute;
+            width: 1050px  ;
+            height: 630px  ;
+            left: 80px;
+            top: 520px  ;
+            }
+            .labirint2{
+            position: absolute;
+            width: 1057px  ;
+            height: 640px  ;
+            left: 80px;
+            top: 1200px  ;
 
-        #calendar {
-          position: relative;
-          width: 95%  ;
-          color: white  ;
-          line-height: 1.2em;
-          font-size: 25px  ;
-          text-align: center;
-          border-spacing:0px;
-          top: 680px  ;
-          left: 80px  ;
-        }
-        #calendar tr.dn td {
-          position: relative;
-          font-size: 15px;
-          font-family: Lovelace;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 60px  ;
-          line-height: 145px  ;
-          top: 800px;
-          left: -80px  ;
+            }
 
+            h1{
+              position: absolute;
+              width: 800px  ;
+              height: 69px;
+              left: 200px  ;
+              top: 190px  ;
 
-        }
-        #calendar thead tr:last-child {
-          position: relative;
-          font-size: small;
-          color: #FFFFFF;
-          font-family: Lovelace;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 60px  ;
-          line-height: 145px  ;
-          top: -810px; left: 90px  ;
+              font-family: Lovelace;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 65px  ;
+              line-height: 70px;
+              text-align: center;
 
-        }
-        #calendar thead tr:nth-child(1) td:nth-child(2) {
-          position: relative;
-          color: #FFFFFF;
-          font-family: Lovelace;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 70px  ;
-          line-height: 124px  ;
-        }
-        #calendar thead tr:nth-child(1) td:nth-child(1):hover,
-        #calendar thead tr:nth-child(1) td:nth-child(3):hover {
-          cursor: pointer;
-        }
-        #calendar tbody td {
-          position: relative;
-          color: #FFFFFF;
-          font-family: Lovelace;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 60px  ;
-          line-height: 145px  ;
-        }
-        #calendar tbody td:nth-child(n+6),
-        #calendar .holiday {
+              color: #FF003D;
 
-          color: FFFFFF;
-          font-family: Lovelace;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 60px  ;
-          line-height: 145px  ;
-        }
-        .btn {
-        position: relative;
-        color: white;
-        padding: 60px 173px  ;
-        width: 190px;
-        height: 120px  ;
-        line-height: 35px;
-        /* top: 50px; */
-        text-decoration: none;
-        left: 360px  ;
-        top: 1990px ;
-        cursor: pointer;
-        border: 2px solid white  ;
-        border-radius: 1px;
-        background-color: #CC0031;
-        font-family: FuturaLightC;
-        font-size: 58px  ;
-      }
-      form{
-        position: absolute;
-        padding-top: 180px  ;
+            }
 
-      }
-      input[type="text"] {
-        position: relative;
-        display:block;
-        width: 340px;
-        margin: 75px  ;
-        left: 50px  ;
+            p1{
+              position: absolute;
+              width: 820px  ;
+              height: 156px;
+              left: 80px;
+              top: 350px  ;
 
-        height: 60px  ;
-        padding: 0 310px  ;
-        font-size: 40px  ;
-        text-align: center;
-        color: white;
-        font-family: FuturaLightC;
-        border-radius: 10px  ;
-        background-color: #CC0031;
-        border: none;
-        border-bottom: 3px solid white  ;
-      }
-      input[type="email"] {
-        position: relative;
-        display:block;
-        width: 340px;
-        margin: 75px  ;
-        left: 50px  ;
+              font-family: FuturaLightC;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 26px  ;
+              line-height: 26px;
 
-        height: 60px  ;
-        padding: 0 310px  ;
-        font-size: 40px  ;
-        text-align: center;
-        color: white;
-        font-family: FuturaLightC;
-        border-radius: 10px  ;
-        background-color: #CC0031;
-        border: none;
-        border-bottom: 3px solid white  ;
-      }
-      }
-      @media only screen and (min-width: 769px){
-       .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
-      }
+              color: #FFFFFF;
+            }
+          }
 
-      @media only screen and (min-width: 321px) and (max-width: 768px){
-        .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
-        }
-        .logo2{
-          position: fixed;
-          left: 930px  ;
-          top: 35px  ;
-          height: 70px  ;
-          width: 180px  ;
-        }
-        .mainlink, .aboutlink, .storelink, .calendarlink .placeslink{ display: none;
-        }
-        #menu__toggle {
-          opacity: 0;
-        }
+           @media only screen and (min-width: 321px) and (max-width: 768px){
 
-        .menu__btn {
-          display: flex;
-          align-items: center;
-          position: fixed;
-          top: 40px;
-          left: 40px;
-          width: 60px;
-          height: 66px;
-          cursor: pointer;
-          z-index: 100;
+          p8{
+            top: 1820px;
+            color: white;
+          }
+          p11{
+            left: 600px;
+          }
+          p12{
+            left: 800px;
+          }
+          #futer{
+            width: 1080px;
+          }
+            h1{
+              left: 270px;
+              top: 70px;
+            }
+            p1{
+              top: 190px;
+              font-size: 30px;
+              line-height: 25px;
+              width: 880px;
 
-        }
+            }
 
-        .menu__btn > span,
-        .menu__btn > span::before,
-        .menu__btn > span::after {
-          display: block;
-          position: absolute;
-          width: 100%;
-          height: 4px;
-          background-color: white;
+            .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+            }
 
-        }
-        .menu__btn > span::before {
-          content: '';
-          top: -20px;
+            .labirint{
+              left: 15px;
 
-        }
-        .menu__btn > span::after {
-          content: '';
-          top: 20px;
+            }
+            .labirint2{
+              left: 15px;
 
-        }
+            }
+            .logo{
+              position: fixed;
+              left: 860px  ;
+              top: 50px  ;
+              height: 80px  ;
+              width: 220px  ;
+              z-index: 7;
+            }
+            .mainlink, .aboutlink, .storelink, .calendarlink .placeslink {display: none;
+            }
+            #menu__toggle {
+              opacity: 0;
+            }
 
-        .menu__box {
-          display: block;
-          position: fixed;
-          visibility: hidden;
-          top: 0;
-          left: -100%;
-          width: 1178px  ;
-          height: 100%  ;
-          margin: 0  ;
-          padding: 100px 0  ;
-          list-style: none  ;
-          text-align: center  ;
-          background-color: #CC0031  ;
-          box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-          z-index: 10;
-        }
-        /* элементы меню */
-        .menu__item {
-          display: block  ;
-          padding: 42px 24px  ;
-          color: white ;
-          font-family: Lovelace  ;
-          font-size: 60px  ;
-          font-weight: 600  ;
-          text-decoration: none  ;
-          background-color:#CC0031  ;
+            .menu__btn {
+              display: flex;
+              align-items: center;
+              position: fixed;
+              top: 40px;
+              left: 40px;
+              width: 60px;
+              height: 66px;
+              cursor: pointer;
+              z-index: 100;
 
-        }
+            }
 
-        #menu__toggle:checked ~ .menu__btn > span {
-          transform: rotate(45deg);
-        }
-        #menu__toggle:checked ~ .menu__btn > span::before {
-          top: 0;
-          transform: rotate(0);
-        }
-        #menu__toggle:checked ~ .menu__btn > span::after {
-          top: 0;
-          transform: rotate(90deg);
-        }
-        #menu__toggle:checked ~ .menu__box {
-          visibility: visible;
-          left: 0;
-      }
-      #calendar {
-        position: relative;
-        width: 95%  ;
-        color: white  ;
-        line-height: 1.2em;
-        font-size: 25px  ;
-        text-align: center;
-        border-spacing:0px;
-        top: 680px  ;
-        left: 80px  ;
-      }
-      #calendar tr.dn td {
-        position: relative;
-        font-size: 15px;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px  ;
-        line-height: 145px  ;
-        top: 800px;
-        left: -80px  ;
+            .menu__btn > span,
+            .menu__btn > span::before,
+            .menu__btn > span::after {
+              display: block;
+              position: absolute;
+              width: 100%;
+              height: 4px;
+              background-color: #FF003D;
+
+            }
+            .menu__btn > span::before {
+              content: '';
+              top: -20px;
+
+            }
+            .menu__btn > span::after {
+              content: '';
+              top: 20px;
+
+            }
+
+            .menu__box {
+              display: block;
+              position: fixed;
+              visibility: hidden;
+              top: 0;
+              left: 1px;
+              width: 1200px  ;
+              height: 100%  ;
+              margin: 0  ;
+              padding: 150px 0  ;
+              list-style: none  ;
+              text-align: center  ;
+              background-color: black  ;
+              box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+              z-index: 10;
+            }
+            /* элементы меню */
+            .menu__item {
+              display: block  ;
+              padding: 28px 24px  ;
+              color: #FF003D  ;
+              font-family: Lovelace  ;
+              font-size: 70px  ;
+              font-weight: 600  ;
+              text-decoration: none  ;
+              background-color: black  ;
+
+            }
+            #menu{
+              display: none;
+            }
+
+            #menu__toggle:checked ~ .menu__btn > span {
+              transform: rotate(45deg);
+            }
+            #menu__toggle:checked ~ .menu__btn > span::before {
+              top: 0;
+              transform: rotate(0);
+            }
+            #menu__toggle:checked ~ .menu__btn > span::after {
+              top: 0;
+              transform: rotate(90deg);
+            }
+            #menu__toggle:checked ~ .menu__box {
+              visibility: visible;
+              left: 0;
+          }
 
 
-      }
-      #calendar thead tr:last-child {
-        position: relative;
-        font-size: small;
-        color: #FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px  ;
-        line-height: 145px  ;
-        top: -810px; left: 90px  ;
+       } 
+            @media only screen and (min-width: 769px){
+              .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
+            }
 
-      }
-      #calendar thead tr:nth-child(1) td:nth-child(2) {
-        position: relative;
-        color: #FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 70px  ;
-        line-height: 124px  ;
-      }
-      #calendar thead tr:nth-child(1) td:nth-child(1):hover,
-      #calendar thead tr:nth-child(1) td:nth-child(3):hover {
-        cursor: pointer;
-      }
-      #calendar tbody td {
-        position: relative;
-        color: #FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px  ;
-        line-height: 145px  ;
-      }
-      #calendar tbody td:nth-child(n+6),
-      #calendar .holiday {
 
-        color: FFFFFF;
-        font-family: Lovelace;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px  ;
-        line-height: 145px  ;
-      }
-      .btn {
-      position: relative;
-      color: white;
-      padding: 60px 173px  ;
-      width: 190px;
-      height: 120px  ;
-      line-height: 35px;
-      /* top: 50px; */
-      text-decoration: none;
-      left: 360px  ;
-      top: 1990px ;
-      cursor: pointer;
-      border: 2px solid white  ;
-      border-radius: 1px;
-      background-color: #CC0031;
-      font-family: FuturaLightC;
-      font-size: 58px  ;
-    }
-    form{
-      position: absolute;
-      padding-top: 100px  ;
-
-    }
-    input[type="text"] {
-      position: relative;
-      display:block;
-      width: 340px;
-      margin: 75px  ;
-      left: 50px  ;
-
-      height: 60px  ;
-      padding: 0 310px  ;
-      font-size: 40px  ;
-      text-align: center;
-      color: white;
-      font-family: FuturaLightC;
-      border-radius: 10px  ;
-      background-color: #CC0031;
-      border: none;
-      border-bottom: 3px solid white  ;
-    }
-    input[type="email"] {
-      position: relative;
-      display:block;
-      width: 340px;
-      margin: 75px  ;
-      left: 50px  ;
-
-      height: 60px  ;
-      padding: 0 310px  ;
-      font-size: 40px  ;
-      text-align: center;
-      color: white;
-      font-family: FuturaLightC;
-      border-radius: 10px  ;
-      background-color: #CC0031;
-      border: none;
-      border-bottom: 3px solid white  ;
-    }
-   }
 
     </style>
+  </head>
+  <body bgcolor="#000000">
+    <p1><a href="./main.html" class="mainlink">Главная</a></p1>
+    <a href="./about.html" class="aboutlink">О нас</a>
+    <a href="./calendar.html" class="calendarlink">Билеты</a>
+    <a href="./places.html" class="placeslink">Места</a>
+    <a href="./store.html" class="storelink">Магазин</a>
+    <img class="logo" src="images/logo.png" alt="logo">
+    <div id="menu"></div>
+    <div id="futer"></div>
+    <div id="boom"></div>
+    <img class="labirint" src="images/labirint.png" alt="labirint">
+    <img class="labirint2" src="images/labirint2.png" alt="labirint2">
+    <h1>Зеркальный лабиринт</h1>
+    <p1>В лабиринте оставайтесь на связи, старайтесь не сходить с главной тропинки, в случе потери
+в лабиринте, дойдите до ближайшего указателя, которые расположены каждые 50 метров. Полная карта лабиринта есть в путеводителе, который вы можете приобрести
+в нашем магазине. </p1>
+    <p8>Телефон</p8>
+    <p9>+7901-420-21-01</p9>
+    <p10>+7999-841-53-81</p10>
+    <p11>Адрес</p11>
+    <p12>ул. Маковского, 2, Одинцово, Московская обл., Россия</p12>
     <div class="hamburger-menu">
       <input id="menu__toggle" type="checkbox" />
       <label class="menu__btn" for="menu__toggle">
@@ -704,80 +668,5 @@
         <li><a class="menu__item" href="./store.html">Магазин</a></li>
       </ul>
     </div>
-  </head>
-  <body bgcolor="CC0031">
-    <form class="forma" action="calendar.html" method="post">
-    <input type="text" name="" value="" placeholder="Имя">
-    <input type="text" name="" value="" placeholder="Фамилия">
-    <input type="email" name="" value="" placeholder="Электронный адрес">
-
-    </div>
-</form>
-
-    <a type="button" href="./ticket.html" class="btn"name="button">Купить</a>
-
-     <p1><a href="./main.html" class="mainlink">Главная</a></p1>
-    <a href="./about.html" class="aboutlink">О нас</a>
-    <a href="./calendar.html" class="calendarlink">Билеты</a>
-    <a href="./places.html" class="placeslink">Места</a>
-    <a href="./store.html" class="storelink">Магазин</a>
-    <img class="logo2" src="images/logo2.png" alt="logo2">
-    <div class="look-calendar">
-<table id="calendar">
-  <thead>
-  <tr>
-  <td><b>‹</b>
-  <td colspan="5">
-  <td><b>›</b>
-  <tr class="dn"><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
-  </thead>
-  <tbody></tbody>
-</table>
-</div>
-
-
-    <script>
-
-
-
-  function calendar(id, year, month) {
-    var Dlast = new Date(year, month + 1, 0).getDate(),
-      D = new Date(year, month, Dlast),
-      DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
-      DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
-      calendar = '<tr>',
-      month = ["I месяц", "II месяц", "III месяц", "IV месяц", "V месяц", "VI месяц", "VII месяц", "VIII месяц", "IX месяц", "X месяц", "XI месяц", "XII месяц"];
-    if (DNfirst != 0) {
-      for (var i = 1; i < DNfirst; i++) calendar += '<td>';
-    } else {
-       for (var i = 0; i < 6; i++) calendar += '<td>';
-    }
-    for (var i = 1; i <= Dlast; i++) {
-       if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
-        calendar += '<td class="today">' + i;
-       } else {
-         calendar += '<td>' + i;
-       }
-       if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
-         calendar += '<tr>';
-       }
-    }
-    for (var i = DNlast; i < 7; i++) calendar += '<td> ';
-    document.querySelector('#' + id + ' tbody').innerHTML = calendar;
-    document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML = month[D.getMonth()] + ' ' + D.getFullYear();
-    document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
-    document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
-    if (document.querySelectorAll('#' + id + ' tbody tr').length < 6) {
-    document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td> <td> <td> <td> <td> <td> <td> ';
-    }
-  }
-  calendar("calendar", new Date().getFullYear(), new Date().getMonth());
-  document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
-    calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) - 1);
-  }
-  document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
-    calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
-  }
-</script>
   </body>
 </html>
