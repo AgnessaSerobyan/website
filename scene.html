@@ -2,310 +2,14 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <title>Сцена</title>
     <meta name="viewport" content="width=device-width">
 
-    <title>Сцена</title>
     <style media="screen">
 
 
 
 
-    @media only screen and (max-width: 320px) {
-
-      .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
-      }
-      .logo{
-        position: fixed;
-        left: 690px !important;
-        top: 60px !important;
-        height: 81px !important;
-        width: 220px !important;
-        z-index: 1 !important;
-      }
-      #menu__toggle {
-        opacity: 0;
-      }
-
-      .menu__btn {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        top: 80px;
-        left: 80px;
-        width: 120px;
-        height: 100px;
-        cursor: pointer;
-        z-index: 100;
-
-      }
-
-      .menu__btn > span,
-      .menu__btn > span::before,
-      .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 10px;
-        background-color: #FF003D;
-
-      }
-      .menu__btn > span::before {
-        content: '';
-        top: -40px;
-
-      }
-      .menu__btn > span::after {
-        content: '';
-        top: 40px;
-
-      }
-
-      .menu__box {
-        display: block;
-        position: fixed;
-        visibility: hidden;
-        top: 0;
-        left: -100%;
-        width: 1220px ;
-        height: 100% ;
-        margin: 0;
-        padding: 80px 0 ;
-        list-style: none ;
-        text-align: center ;
-        background-color: black;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-        z-index: 10;
-      }
-      /* элементы меню */
-      .menu__item {
-        display: block;
-        padding: 42px 94px;
-        color: #FF003D;
-        font-family: Lovelace;
-        font-size: 80px;
-        font-weight: 600;
-        text-decoration: none;
-        background-color: black;
-        top: 30px;
-      }
-
-      #menu__toggle:checked ~ .menu__btn > span {
-        transform: rotate(45deg);
-      }
-      #menu__toggle:checked ~ .menu__btn > span::before {
-        top: 0;
-        transform: rotate(0);
-      }
-      #menu__toggle:checked ~ .menu__btn > span::after {
-        top: 0;
-        transform: rotate(90deg);
-      }
-      #menu__toggle:checked ~ .menu__box {
-        visibility: visible;
-        left: 0;
-      }
-       #futer{
-      width: 1000px !important;
-      /* left: 100px !important; */
-      top: 2600px !important;
-      background: black;
-      height: 2px !important;
-    }
-    #boom{
-      top: 2800px !important;
-    }
-  p8{
-  position: absolute;
-  width: 199px;
-  height: 30px;
-  left: 80px;
-  top: 2660px !important;
-
-  font-family: Lovelace;
-  font-style: light;
-  font-weight: light;
-  font-size: 35px !important;
-  line-height: 56px;
-
-  color: black;}
-
-  p11{
-  position: absolute;
-  width: 199px;
-  height: 30px;
-  left: 530px !important;
-  top: 2660px !important;
-  font-family: Lovelace;
-  font-style: light;
-  font-weight: light;
-  font-size: 35px !important;
-  line-height: 56px;
-
-  color: black;}
-
-  p9{
-  position: absolute;
-  width: 285px;
-  height: 48px;
-  left: 290px;
-  top: 2670px !important;
-  font-family: FuturaLightC;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px !important;
-  line-height: 38px;
-
-  color: black;
-  }
-
-  p10{
-  position: absolute;
-  width: 285px;
-  height: 48px;
-  left: 290px;
-  top: 2700px !important;
-
-  font-family: FuturaLightC;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px !important;
-  line-height: 38px;
-
-  color: black;
-  }
-
-  p12{
-  position: absolute;
-  width: 285px;
-  height: 48px;
-  left: 710px !important;
-  top: 2660px !important;
-
-  font-family: FuturaLightC;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px !important;
-  line-height: 38px;
-
-  color: black;
-  }
-  .scene{
-  position: absolute;
-  width: 800px !important;
-  height: 461px !important;
-  left: 80px;
-  top: 470px !important;
-      }
-
-.scene2{
-position: absolute;
-width: 800px !important;
-height: 471px !important;
-left: 80px !important;
-top: 1300px !important;
-      }
-      .scene3{
-position: absolute;
-width: 800px !important;
-height: 449px !important;
-left: 80px;
-top: 2070px !important;
-      }
-      h1{position: absolute;
-width: 496px;
-height: 69px;
-left: 78px !important;
-top: 220px !important;
-
-font-family: Lovelace;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 55px;
-text-align: center;
-
-color: #FF003D;
-}
-    p5{position: absolute;
-width: 650px !important;
-height: 206px;
-left: 80px !important;
-top: 335px !important;
-
-font-family: FuturaLightC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px !important;
-line-height: 32px !important;
-
-color: #FFFFFF;}
-
-      h2{position: absolute;
-width: 650px !important;
-height: 138px;
-left: 80px !important;
-top: 960px !important;
-
-font-family: Lovelace;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 55px;
-
-color: #FF003D;
-}
-          p6{position: absolute;
-            width: 650px !important;
-height: 106px;
-left: 80px !important;
-top: 1125px !important;
-
-font-family: FuturaLightC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px !important;
-line-height: 32px !important;
-
-color: #FFFFFF;
-}
-
-      h3{
-        position: absolute;
-width: 499px;
-height: 69px;
-left: 80px !important;
-top: 1800px !important;
-
-font-family: Lovelace;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 55px;
-text-align: center;
-
-color: #FF003D;
-
-}
-
-      p7{
-        position: absolute;
-        width: 650px !important;
-height: 82px;
-left: 80px !important;
-top: 1930px !important;
-font-family: FuturaLightC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px !important;
-line-height: 32px !important;
-
-color: #FFFFFF;
-
-}
-}
-@media only screen and (min-width: 321px){
- .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
-}
       .logo{
         position: fixed;
         left: 80px;
@@ -314,7 +18,98 @@ color: #FFFFFF;
         width: 117px;
         z-index: 101;
       }
+      .mainlink{
+        position: fixed;
+        color: white;
+        width: 87px;
+        font-family: FuturaLightC;
+        /* margin: 30%; */
+        font-size: 32px;
+        text-decoration: none;
+         left: 280px;
 
+        top: 38px;
+        z-index: 101;
+
+      }
+
+      .mainlink:hover{
+        color: #FF003D;
+      }
+
+      .aboutlink{
+        position: fixed;
+        color: white;
+        width: 87px;
+        font-family: FuturaLightC;
+        /* margin: 30%; */
+        font-size: 32px;
+        text-decoration: none;
+         left: 480px;
+        top: 38px;
+        z-index: 101;
+      }
+
+      .aboutlink:hover{
+        color: #FF003D;
+      }
+
+      .calendarlink{
+        position: fixed;
+        color: white;
+        width: 87px;
+        font-family: FuturaLightC;
+        /* margin: 30%; */
+        font-size: 32px;
+        text-decoration: none;
+        left: 680px;
+        top: 38px;
+        z-index: 101;
+
+
+
+      }
+
+      .calendarlink:hover{
+        color: #FF003D;
+      }
+
+      .placeslink{
+        position: fixed;
+        color: white;
+        width: 87px;
+        font-family: FuturaLightC;
+        /* margin: 30%; */
+        font-size: 32px;
+        text-decoration: none;
+        left: 880px;
+        top: 38px;
+        z-index: 101;
+
+
+      }
+
+      .placeslink:hover{
+        color: #FF003D;
+      }
+
+      .storelink{
+        position: fixed;
+        color: white;
+        width: 87px;
+        font-family: FuturaLightC;
+        /* margin: 30%; */
+        font-size: 32px;
+        text-decoration: none;
+        left: 1080px;
+        top: 38px;
+        z-index: 101;
+
+      }
+
+      .storelink:hover{
+        color: #FF003D;
+      }
         .scene{
         position: absolute;
         width: 530px;
@@ -348,7 +143,7 @@ color: #FFFFFF;
       font-weight: normal;
       font-size: 50px;
       line-height: 55px;
-      text-align: center;
+      text-align: left;
 
       color: #FF003D;
       }
@@ -384,7 +179,7 @@ color: #FFFFFF;
       width: 485px;
       height: 106px;
       left: 130px;
-      top: 755px;
+      top: 735px;
 
       font-family: FuturaLightC;
       font-style: normal;
@@ -407,7 +202,7 @@ color: #FFFFFF;
       font-weight: normal;
       font-size: 50px;
       line-height: 55px;
-      text-align: center;
+      text-align: left;
 
       color: #FF003D;
 
@@ -418,7 +213,7 @@ color: #FFFFFF;
       width: 514px;
       height: 82px;
       right: 90px;
-      top: 1090px;
+      top: 1150px;
       font-family: FuturaLightC;
       font-style: normal;
       font-weight: normal;
@@ -531,98 +326,465 @@ color: #FFFFFF;
       height: 1px;
 
       }
-      .mainlink{
-        position: fixed;
-        color: white;
-        width: 87px;
+      @media only screen and (min-width: 969px){
+       .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
+      }
+      @media only screen and (max-width: 320px) {
+
+        .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+        }
+        .logo{
+          position: fixed;
+          left: 710px  ;
+          top: 65px  ;
+          height: 81px  ;
+          width: 220px  ;
+          z-index: 1  ;
+        }
+        #menu__toggle {
+          opacity: 0;
+        }
+
+        .menu__btn {
+          display: flex;
+          align-items: center;
+          position: fixed;
+          top: 80px;
+          left: 80px;
+          width: 120px;
+          height: 100px;
+          cursor: pointer;
+          z-index: 100;
+
+        }
+
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 10px;
+          background-color: #FF003D;
+
+        }
+        .menu__btn > span::before {
+          content: '';
+          top: -40px;
+
+        }
+        .menu__btn > span::after {
+          content: '';
+          top: 40px;
+
+        }
+
+        .menu__box {
+          display: block;
+          position: fixed;
+          visibility: hidden;
+          top: 0;
+          left: -100%;
+          width: 1120px ;
+          height: 100% ;
+          margin: 0;
+          padding: 80px 0 ;
+          list-style: none ;
+          text-align: center ;
+          background-color: black;
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+          z-index: 10;
+        }
+        /* элементы меню */
+        .menu__item {
+          display: block;
+          padding: 42px 94px;
+          color: #FF003D;
+          font-family: Lovelace;
+          font-size: 80px;
+          font-weight: 600;
+          text-decoration: none;
+          background-color: black;
+          top: 30px;
+        }
+
+        #menu__toggle:checked ~ .menu__btn > span {
+          transform: rotate(45deg);
+        }
+        #menu__toggle:checked ~ .menu__btn > span::before {
+          top: 0;
+          transform: rotate(0);
+        }
+        #menu__toggle:checked ~ .menu__btn > span::after {
+          top: 0;
+          transform: rotate(90deg);
+        }
+        #menu__toggle:checked ~ .menu__box {
+          visibility: visible;
+          left: 0;
+        }
+         #boom{
+          top: 1700px  ;
+        }
+        #futer{
+          width: 1000px  ;
+          /* left: 100px  ; */
+          top: 2590px  ;
+          background: black;
+          height: 2px  ;
+        }
+
+        p8{
+        position: absolute;
+        width: 199px;
+        height: 30px;
+        left: 80px;
+        top: 2660px  ;
+
+        font-family: Lovelace;
+        font-style: light;
+        font-weight: light;
+        font-size: 35px  ;
+        line-height: 56px;
+
+        color: black;}
+
+        p11{
+        position: absolute;
+        width: 199px;
+        height: 30px;
+        left: 530px  ;
+        top: 2660px  ;
+        font-family: Lovelace;
+        font-style: light;
+        font-weight: light;
+        font-size: 35px  ;
+        line-height: 56px;
+
+        color: black;}
+
+        p9{
+        position: absolute;
+        width: 285px;
+        height: 48px;
+        left: 290px;
+        top: 2670px  ;
         font-family: FuturaLightC;
-        /* margin: 30%; */
-        font-size: 32px;
-        text-decoration: none;
-         left: 280px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px  ;
+        line-height: 38px;
 
-        top: 38px;
-        z-index: 101;
+        color: black;
+        }
 
-      }
+        p10{
+        position: absolute;
+        width: 285px;
+        height: 48px;
+        left: 290px;
+        top: 2700px  ;
 
-      .mainlink:hover{
-        color: #FF003D;
-      }
-
-      .aboutlink{
-        position: fixed;
-        color: white;
-        width: 87px;
         font-family: FuturaLightC;
-        /* margin: 30%; */
-        font-size: 32px;
-        text-decoration: none;
-         left: 480px;
-        top: 38px;
-        z-index: 101;
-      }
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px  ;
+        line-height: 38px;
 
-      .aboutlink:hover{
-        color: #FF003D;
-      }
+        color: black;
+        }
 
-      .calendarlink{
-        position: fixed;
-        color: white;
-        width: 87px;
+        p12{
+        position: absolute;
+        width: 285px;
+        height: 48px;
+        left: 710px  ;
+        top: 2660px  ;
+
         font-family: FuturaLightC;
-        /* margin: 30%; */
-        font-size: 32px;
-        text-decoration: none;
-        left: 680px;
-        top: 38px;
-        z-index: 101;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px  ;
+        line-height: 38px;
 
+        color: black;
+        }
+        .scene{
+        position: absolute;
+        width: 800px  ;
+        height: 461px  ;
+        left: 80px;
+        top: 470px  ;
+            }
 
+      .scene2{
+      position: absolute;
+      width: 800px  ;
+      height: 471px  ;
+      left: 80px  ;
+      top: 1230px  ;
+            }
+            .scene3{
+      position: absolute;
+      width: 800px  ;
+      height: 449px  ;
+      left: 80px;
+      top: 2070px  ;
+            }
+            h1{position: absolute;
+      width: 496px;
+      height: 69px;
+      left: 78px  ;
+      top: 220px  ;
+
+      font-family: Lovelace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 55px;
+      text-align: center;
+
+      color: #FF003D;
+      }
+          p5{position: absolute;
+      width: 650px  ;
+      height: 206px;
+      left: 80px  ;
+      top: 335px  ;
+
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px  ;
+      line-height: 32px  ;
+
+      color: #FFFFFF;}
+
+            h2{position: absolute;
+      width: 650px  ;
+      height: 138px;
+      left: 80px  ;
+      top: 960px  ;
+
+      font-family: Lovelace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 55px;
+
+      color: #FF003D;
+      }
+                p6{position: absolute;
+                  width: 650px  ;
+      height: 106px;
+      left: 80px  ;
+      top: 1075px  ;
+
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px  ;
+      line-height: 32px  ;
+
+      color: #FFFFFF;
+      }
+
+            h3{
+              position: absolute;
+      width: 499px;
+      height: 69px;
+      left: 80px  ;
+      top: 1740px  ;
+
+      font-family: Lovelace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 55px;
+      text-align: center;
+
+      color: #FF003D;
 
       }
 
-      .calendarlink:hover{
-        color: #FF003D;
-      }
+            p7{
+              position: absolute;
+              width: 650px  ;
+      height: 82px;
+      left: 80px  ;
+      top: 1930px  ;
+      font-family: FuturaLightC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px  ;
+      line-height: 32px  ;
 
-      .placeslink{
-        position: fixed;
-        color: white;
-        width: 87px;
-        font-family: FuturaLightC;
-        /* margin: 30%; */
-        font-size: 32px;
-        text-decoration: none;
-        left: 880px;
-        top: 38px;
-        z-index: 101;
-
+      color: #FFFFFF;
 
       }
+      }
+      @media only screen and (min-width: 321px) and (max-width: 768px){
 
-      .placeslink:hover{
-        color: #FF003D;
+     p8{
+       top: 2620px;
+       color: white;
+     }
+     p10{
+       top: 2670px;
+
+     }
+     p9{
+       top: 2630px;
+     }
+     p11{
+       top: 2620px;
+       left: 600px;
+     }
+     p12{
+       top: 2620px;
+       left: 800px;
+     }
+     #futer{
+       width: 1080px;
+       top: 2580px;
+     }
+     #boom{
+       top: 2770px;
+     }
+     .scene{
+     position: absolute;
+     width: 930px;
+     height: 540px;
+     left: 80px;
+     top: 380px;
+         }
+
+   .scene2{
+   position: absolute;
+   width: 930px;
+   height: 540px;
+   left: 80px;
+   top: 1200px;
+         }
+         .scene3{
+   position: absolute;
+   width: 930px;
+   height: 530px;
+   left: 80px;
+   top: 2000px;
       }
 
-      .storelink{
-        position: fixed;
-        color: white;
-        width: 87px;
-        font-family: FuturaLightC;
-        /* margin: 30%; */
-        font-size: 32px;
-        text-decoration: none;
-        left: 1080px;
-        top: 38px;
-        z-index: 101;
+      h1{top: 130px; left: 260px; font-size: 62px; width: 980px; }
+      h2{top: 950px; left: 60px; width: 1900px; font-size: 62px; }
+      h3{top: 1740px; left: 240px; width: 980px; font-size: 62px; }
 
-      }
+      p5{top: 250px; font-size: 26px; left: 80px;}
+      p6{top: 1080px; font-size: 26px; left: 80px;}
+      p7{top: 1880px; font-size: 26px; left: 80px;}
 
-      .storelink:hover{
-        color: #FF003D;
-      }
+       .mainlink, .aboutlink, .storelink, .calendarlink, .placeslink{ display: none;
+       }
+
+
+       .logo{
+         position: fixed;
+         left: 840px  ;
+         top: 50px  ;
+         height: 80px  ;
+         width: 220px  ;
+         z-index: 7;
+       }
+       .mainlink, .aboutlink, .storelink, .calendarlink .placeslink {display: none;
+       }
+       .menu__btn {
+         display: flex;
+         align-items: center;
+         position: fixed;
+         top: 40px;
+         left: 40px;
+         width: 60px;
+         height: 66px;
+         cursor: pointer;
+         z-index: 100;
+
+       }
+
+       .menu__btn > span,
+       .menu__btn > span::before,
+       .menu__btn > span::after {
+         display: block;
+         position: absolute;
+         width: 100%;
+         height: 4px;
+         background-color: #FF003D;
+
+       }
+       .menu__btn > span::before {
+         content: '';
+         top: -20px;
+
+       }
+       .menu__btn > span::after {
+         content: '';
+         top: 20px;
+
+       }
+
+       .menu__box {
+         display: block;
+         position: fixed;
+         visibility: hidden;
+         top: 0;
+         left: 1px;
+         width: 1100px  ;
+         height: 100%  ;
+         margin: 0  ;
+         padding: 150px 0  ;
+         list-style: none  ;
+         text-align: center  ;
+         background-color: black  ;
+         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+         z-index: 10;
+       }
+       /* элементы меню */
+       .menu__item {
+         display: block  ;
+         padding: 28px 24px  ;
+         color: #FF003D  ;
+         font-family: Lovelace  ;
+         font-size: 70px  ;
+         font-weight: 600  ;
+         text-decoration: none  ;
+         background-color: black  ;
+
+       }
+       #menu{
+         display: none;
+       }
+
+       #menu__toggle:checked ~ .menu__btn > span {
+         transform: rotate(45deg);
+       }
+       #menu__toggle:checked ~ .menu__btn > span::before {
+         top: 0;
+         transform: rotate(0);
+       }
+       #menu__toggle:checked ~ .menu__btn > span::after {
+         top: 0;
+         transform: rotate(90deg);
+       }
+       #menu__toggle:checked ~ .menu__box {
+         visibility: visible;
+         left: 0;
+     }
+
+
+  }
+       /* @media only screen and (min-width: 769px){
+         .menu__item, .menu__box, .menu__btn, .checkbox .menu__toggle, .hamburger-menu{ visibility: hidden;}
+       } */
+
+
 
     </style>
   </head>
@@ -666,6 +828,8 @@ color: #FFFFFF;
     <li><a class="menu__item" href="./store.html">Магазин</a></li>
   </ul>
 
+
+  </body>
 
   </body>
 </html>
